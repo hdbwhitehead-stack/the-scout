@@ -54,6 +54,20 @@ def build_prompt(market: dict, cand: Candidate) -> str:
     )
 
 
+def _parse_judgment(text: str) -> Judgment:
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.strip("`")
+        if text.startswith("json"):
+            text = text[4:].strip()
+    data = json.loads(text)
+    return Judgment(
+        risk_score=int(data["risk_score"]),
+        risk_rationale=str(data["risk_rationale"]),
+        summary=str(data["summary"]),
+    )
+
+
 async def _collect_text(prompt: str, model: str) -> str:
     """Send a one-shot prompt via claude-agent-sdk and return the assistant text."""
     options = ClaudeAgentOptions(
@@ -80,17 +94,8 @@ def judge_candidate(
     market: dict,
     cand: Candidate,
 ) -> Judgment:
-    text = asyncio.run(_collect_text(build_prompt(market, cand), model)).strip()
-    if text.startswith("```"):
-        text = text.strip("`")
-        if text.startswith("json"):
-            text = text[4:].strip()
-    data = json.loads(text)
-    return Judgment(
-        risk_score=int(data["risk_score"]),
-        risk_rationale=str(data["risk_rationale"]),
-        summary=str(data["summary"]),
-    )
+    text = asyncio.run(_collect_text(build_prompt(market, cand), model))
+    return _parse_judgment(text)
 
 
 def store_judgment(

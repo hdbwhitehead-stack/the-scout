@@ -89,13 +89,18 @@ def score(
 def judge(
     db_path: Path = typer.Option(DEFAULT_DB, "--db"),
     config_path: Path = typer.Option(DEFAULT_CONFIG, "--config"),
+    max_judge: int = typer.Option(50, "--max-judge"),
 ) -> None:
     """Call Claude Haiku on unjudged candidates and cache results."""
     conn = _open(db_path)
     cfg = _load(config_path)
     cands = _all_candidates(conn, cfg, date.today())
-    new = unjudged_candidates(conn, cands, model=cfg.model)
-    console.print(f"{len(new)} new candidates to judge ({len(cands) - len(new)} cached).")
+    unjudged = unjudged_candidates(conn, cands, model=cfg.model)
+    new = sorted(unjudged, key=lambda c: c.yield_apr, reverse=True)[:max_judge]
+    console.print(
+        f"judge: {len(new)} candidates (top {max_judge} by APR, "
+        f"{len(cands) - len(new)} cached or skipped)"
+    )
 
     for i, cand in enumerate(new, 1):
         cur = conn.execute("SELECT * FROM markets WHERE id = ?", (cand.market_id,))
@@ -127,6 +132,7 @@ def run(
     db_path: Path = typer.Option(DEFAULT_DB, "--db"),
     config_path: Path = typer.Option(DEFAULT_CONFIG, "--config"),
     out_dir: Path = typer.Option(DEFAULT_OUT, "--out"),
+    max_judge: int = typer.Option(50, "--max-judge"),
 ) -> None:
     """Run fetch → score → judge → render in sequence."""
     conn = _open(db_path)
@@ -140,20 +146,23 @@ def run(
     cands = _all_candidates(conn, cfg, date.today())
     console.print(f"score: {len(cands)} candidates")
 
-    new = unjudged_candidates(conn, cands, model=cfg.model)
-    if new:
-        for i, cand in enumerate(new, 1):
-            cur = conn.execute("SELECT * FROM markets WHERE id = ?", (cand.market_id,))
-            market = dict(cur.fetchone())
-            try:
-                judgment = judge_candidate(cfg.model, market, cand)
-            except Exception as exc:
-                console.print(f"  [yellow]skip {cand.market_id}: {exc}[/yellow]")
-                continue
-            store_judgment(conn, cand, judgment, model=cfg.model, judged_at=_now_iso())
-            console.print(f"  judged [{i}/{len(new)}] {cand.market_id} risk={judgment.risk_score}")
-    else:
-        console.print("judge: all candidates already cached")
+    unjudged = unjudged_candidates(conn, cands, model=cfg.model)
+    new = sorted(unjudged, key=lambda c: c.yield_apr, reverse=True)[:max_judge]
+    console.print(
+        f"judge: {len(new)} candidates (top {max_judge} by APR, "
+        f"{len(cands) - len(new)} cached or skipped)"
+    )
+
+    for i, cand in enumerate(new, 1):
+        cur = conn.execute("SELECT * FROM markets WHERE id = ?", (cand.market_id,))
+        market = dict(cur.fetchone())
+        try:
+            judgment = judge_candidate(cfg.model, market, cand)
+        except Exception as exc:
+            console.print(f"  [yellow]skip {cand.market_id}: {exc}[/yellow]")
+            continue
+        store_judgment(conn, cand, judgment, model=cfg.model, judged_at=_now_iso())
+        console.print(f"  judged [{i}/{len(new)}] {cand.market_id} risk={judgment.risk_score}")
 
     render_report(conn, cfg, out_dir=out_dir, generated_at=_now_iso())
     console.print(f"render: {out_dir / 'index.html'}")
