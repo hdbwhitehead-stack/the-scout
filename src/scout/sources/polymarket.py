@@ -33,6 +33,8 @@ def fetch_polymarket(
                     "offset": offset,
                 },
             )
+            if response.status_code == 422:
+                break
             response.raise_for_status()
             page = response.json()
             if not page:

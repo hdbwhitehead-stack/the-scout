@@ -17,7 +17,9 @@ def fetch_all_sources() -> list[dict]:
     """Fetch from every configured source. Returns combined normalized markets."""
     out: list[dict] = []
     out.extend(fetch_polymarket())
-    out.extend(fetch_kalshi())
+    # Kalshi disabled: returns 330k+ markets, needs close_time + volume filters
+    # before it's usable. Re-enable once sources/kalshi.py adds bounded filtering.
+    # out.extend(fetch_kalshi())
     return out
 
 
