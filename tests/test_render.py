@@ -17,6 +17,8 @@ def _cfg() -> Config:
         min_price=0.90,
         max_days_to_resolution=730,
         model="claude-haiku-4-5",
+        min_liquidity=100.0,
+        min_volume=1000.0,
     )
 
 

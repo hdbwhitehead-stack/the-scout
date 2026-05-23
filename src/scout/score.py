@@ -52,6 +52,11 @@ def score_market(market: dict, today: date, cfg: Config) -> Candidate | None:
     if price < cfg.min_price:
         return None
 
+    liq = market.get("liquidity") or 0.0
+    vol = market.get("volume") or 0.0
+    if liq < cfg.min_liquidity and vol < cfg.min_volume:
+        return None
+
     yield_apr = ((1 - price) / price) * (365 / days)
     if yield_apr < cfg.yield_threshold_apr:
         return None

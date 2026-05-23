@@ -12,6 +12,8 @@ class Config:
     min_price: float
     max_days_to_resolution: int
     model: str
+    min_liquidity: float
+    min_volume: float
 
 
 def load_config(path: Path) -> Config:
@@ -30,9 +32,19 @@ def load_config(path: Path) -> Config:
     if max_days <= 0:
         raise ValueError("max_days_to_resolution must be > 0")
 
+    min_liquidity = float(data.get("min_liquidity", 100.0))
+    if min_liquidity < 0:
+        raise ValueError("min_liquidity must be >= 0")
+
+    min_volume = float(data.get("min_volume", 1000.0))
+    if min_volume < 0:
+        raise ValueError("min_volume must be >= 0")
+
     return Config(
         yield_threshold_apr=yield_threshold,
         min_price=min_price,
         max_days_to_resolution=max_days,
         model=str(data["model"]),
+        min_liquidity=min_liquidity,
+        min_volume=min_volume,
     )

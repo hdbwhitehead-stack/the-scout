@@ -14,6 +14,8 @@ yield_threshold_apr = 0.05
 min_price = 0.90
 max_days_to_resolution = 730
 model = "claude-haiku-4-5"
+min_liquidity = 200.0
+min_volume = 5000.0
 """
     )
     cfg = load_config(config_path)
@@ -22,6 +24,8 @@ model = "claude-haiku-4-5"
     assert cfg.min_price == 0.90
     assert cfg.max_days_to_resolution == 730
     assert cfg.model == "claude-haiku-4-5"
+    assert cfg.min_liquidity == 200.0
+    assert cfg.min_volume == 5000.0
 
 
 def test_load_config_rejects_negative_threshold(tmp_path: Path) -> None:
@@ -36,3 +40,18 @@ model = "claude-haiku-4-5"
     )
     with pytest.raises(ValueError, match="yield_threshold_apr"):
         load_config(config_path)
+
+
+def test_load_config_uses_defaults_for_missing_liquidity_fields(tmp_path: Path) -> None:
+    p = tmp_path / "config.toml"
+    p.write_text(
+        """
+yield_threshold_apr = 0.05
+min_price = 0.85
+max_days_to_resolution = 730
+model = "claude-haiku-4-5"
+"""
+    )
+    cfg = load_config(p)
+    assert cfg.min_liquidity == 100.0
+    assert cfg.min_volume == 1000.0

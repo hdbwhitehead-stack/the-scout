@@ -11,9 +11,11 @@ from scout.score import Candidate, score_market
 def cfg() -> Config:
     return Config(
         yield_threshold_apr=0.05,
-        min_price=0.90,
+        min_price=0.85,
         max_days_to_resolution=730,
         model="claude-haiku-4-5",
+        min_liquidity=100.0,
+        min_volume=1000.0,
     )
 
 
@@ -25,6 +27,8 @@ def _market(yes: float, no: float, end_date: str) -> dict:
         "end_date": end_date,
         "yes_price": yes,
         "no_price": no,
+        "liquidity": 10000.0,
+        "volume": 100000.0,
     }
 
 
@@ -79,3 +83,32 @@ def test_score_market_missing_end_date_rejected(cfg: Config) -> None:
     today = date(2026, 5, 23)
     market = _market(yes=0.05, no=0.95, end_date=None)
     assert score_market(market, today, cfg) is None
+
+
+def test_score_market_dead_market_rejected(cfg: Config) -> None:
+    """Both liquidity and volume below floor → skipped."""
+    today = date(2026, 5, 23)
+    market = _market(yes=0.05, no=0.95, end_date="2026-12-29T23:59:59Z")
+    market["liquidity"] = 10.0  # below 100 default
+    market["volume"] = 50.0      # below 1000 default
+    assert score_market(market, today, cfg) is None
+
+
+def test_score_market_thin_book_but_active_history_kept(cfg: Config) -> None:
+    """Low liquidity OK if volume shows historical interest."""
+    today = date(2026, 5, 23)
+    market = _market(yes=0.05, no=0.95, end_date="2026-12-29T23:59:59Z")
+    market["liquidity"] = 10.0    # below floor
+    market["volume"] = 50000.0     # well above floor
+    cand = score_market(market, today, cfg)
+    assert cand is not None
+
+
+def test_score_market_zero_volume_but_fresh_book_kept(cfg: Config) -> None:
+    """Brand-new market with $0 historical volume but tradeable book is kept."""
+    today = date(2026, 5, 23)
+    market = _market(yes=0.05, no=0.95, end_date="2026-12-29T23:59:59Z")
+    market["liquidity"] = 500.0   # above floor
+    market["volume"] = 0.0
+    cand = score_market(market, today, cfg)
+    assert cand is not None
