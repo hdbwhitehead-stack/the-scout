@@ -43,7 +43,6 @@
       radial-gradient(800px 500px at -10% 110%, rgba(181,137,61,0.07), transparent 60%),
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.08  0 0 0 0 0.08  0 0 0 0 0.06  0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
       var(--paper);
-    background-attachment: fixed;
   }
 
   ::selection { background: var(--accent); color: var(--paper); }
@@ -603,7 +602,7 @@
       <h1>The <em>Scout</em></h1>
       <div class="tagline">Tiny premiums for taking the obvious side.</div>
     </div>
-    <div class="right">Updated <span id="updated-at">2026-05-23T07:50:42.601371+00:00</span></div>
+    <div class="right">Updated <span id="updated-at">2026-05-23T08:12:49.180208+00:00</span></div>
   </header>
 
   <section class="lede">
@@ -616,7 +615,7 @@
         <div class="value" id="stat-count">13</div>
       </div>
       <div class="stat">
-        <div class="label">Median APR</div>
+        <div class="label">Median YTM</div>
         <div class="value" id="stat-median">14.4<small>%</small></div>
       </div>
       <div class="stat">
@@ -656,7 +655,7 @@
           <th data-key="side" class="hide-sm">Side</th>
           <th data-key="price" class="num-h hide-sm" style="text-align:right">Price</th>
           <th data-key="absolute_payoff_pct" class="num-h hide-md" style="text-align:right">Payoff</th>
-          <th data-key="yield_apr" class="sorted num-h" style="text-align:right">APR <span class="arrow">&#9660;</span></th>
+          <th data-key="yield_apr" class="sorted num-h" style="text-align:right">YTM <span class="arrow">&#9660;</span></th>
           <th data-key="edge_pct" class="num-h hide-sm" style="text-align:right">Edge</th>
           <th data-key="kelly_fraction" class="num-h hide-sm" style="text-align:right">Kelly</th>
           <th data-key="days_to_resolution" class="num-h" style="text-align:right">Resolves</th>
@@ -679,8 +678,8 @@
         <p>Each row is a short-tail-risk position. You collect a small premium in exchange for accepting a small probability of a large, total loss. The bet looks boring most of the time. That&rsquo;s the point. Over a large enough basket, the premiums compound; the occasional blow-up is the cost of doing business.</p>
       </details>
       <details class="method">
-        <summary>The APR figure, with caveats</summary>
-        <p>APR is computed as <code>(1 &minus; price) &divide; price &divide; years_to_resolution</code>, assuming the position is held to resolution. Early exit is possible but costs the bid-ask spread, which on Polymarket is often wider than the premium itself for thinly-traded markets. Watch the liquidity column.</p>
+        <summary>The YTM figure, with caveats</summary>
+        <p>YTM (yield to maturity) is computed as <code>(1 &minus; price) &divide; price &divide; years_to_resolution</code>, assuming the position is held to resolution. Early exit is possible but costs the bid-ask spread, which on Polymarket is often wider than the premium itself for thinly-traded markets. Watch the liquidity column.</p>
       </details>
       <details class="method">
         <summary>What the risk score does and does not mean</summary>
@@ -785,7 +784,7 @@ function applyFilters() {
 function renderRow(r, i) {
   const open = state.open.has(r.slug);
   const tr = el("tr", { class: "market" + (open ? " open" : ""), dataset: { slug: r.slug } });
-  tr.style.animationDelay = (i * 20) + "ms";
+  if (i < 20) tr.style.animationDelay = (i * 20) + "ms";
 
   tr.appendChild(el("td", { class: "idx" }, String(i + 1).padStart(2, "0")));
 
