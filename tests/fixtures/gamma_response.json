@@ -1,0 +1,26 @@
+[
+  {
+    "id": "0x111",
+    "slug": "first-market",
+    "question": "Will the first thing happen by 2026?",
+    "tags": [{"label": "Politics"}],
+    "endDate": "2026-12-31T23:59:59Z",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.04\", \"0.96\"]",
+    "volume": 50000,
+    "liquidity": 8000,
+    "description": "Resolves YES if X happens by EOY 2026."
+  },
+  {
+    "id": "0x222",
+    "slug": "second-market",
+    "question": "Will the second thing happen?",
+    "tags": [{"label": "Crypto"}],
+    "endDate": "2027-06-30T23:59:59Z",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.55\", \"0.45\"]",
+    "volume": 1000,
+    "liquidity": 200,
+    "description": "Resolves YES on first official confirmation."
+  }
+]
