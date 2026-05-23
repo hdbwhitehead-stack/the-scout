@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS judgments (
     risk_score          INTEGER,
     risk_rationale      TEXT,
     summary             TEXT,
+    subjective_p_win    REAL,
     model               TEXT NOT NULL,
     judged_at           TEXT NOT NULL,
     PRIMARY KEY (market_id, side, model),

@@ -37,6 +37,7 @@ def _seed_judged(conn, sample_market):
         risk_score=5,
         risk_rationale="Resolution depends on supernatural verification — no clean arbiter.",
         summary="Bet NO on Jesus resurrection by 2026, paying ~6.4% absolute (10.6% APR).",
+        subjective_p_win=0.99,
     )
     store_judgment(
         conn, cand, judgment, model="claude-haiku-4-5", judged_at="2026-05-23T01:00:00Z"
@@ -95,6 +96,39 @@ def test_enrich_rows_adds_payoff_and_bucket(tmp_db: Path, sample_market: dict) -
     # absolute_payoff_pct = (1 - 0.94) * 100 = 6.0
     assert row["absolute_payoff_pct"] == pytest.approx(6.0, abs=1e-6)
     assert row["duration_bucket"] == "91–365d"
+
+
+def test_enrich_rows_computes_edge_and_kelly() -> None:
+    rows = [{
+        "price": 0.85,
+        "days_to_resolution": 100,
+        "subjective_p_win": 0.95,
+    }]
+    enriched = enrich_rows(rows)
+    r = enriched[0]
+    # edge: (0.95 - 0.85) * 100 = 10.0
+    assert r["edge_pct"] == pytest.approx(10.0, abs=1e-6)
+    # Kelly: b = 0.15/0.85 ≈ 0.1765
+    #   f = (0.1765 * 0.95 - 0.05) / 0.1765 ≈ 0.6667
+    assert r["kelly_fraction"] == pytest.approx(0.6667, abs=1e-3)
+
+
+def test_enrich_rows_handles_missing_subjective_p_win() -> None:
+    rows = [{"price": 0.94, "days_to_resolution": 200}]
+    enriched = enrich_rows(rows)
+    assert enriched[0]["edge_pct"] is None
+    assert enriched[0]["kelly_fraction"] is None
+
+
+def test_kelly_clamped_to_zero_when_no_edge() -> None:
+    # Subjective P below market price → negative edge → Kelly clamps to 0
+    rows = [{
+        "price": 0.95,
+        "days_to_resolution": 100,
+        "subjective_p_win": 0.80,
+    }]
+    enriched = enrich_rows(rows)
+    assert enriched[0]["kelly_fraction"] == 0.0
 
 
 def test_render_report_writes_html_and_json(tmp_db: Path, tmp_path: Path, sample_market: dict) -> None:

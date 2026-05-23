@@ -326,6 +326,28 @@
   }
   td.price .price-val { color: var(--ink); }
   td.payoff .payoff-val { color: var(--ink); font-weight: 500; }
+
+  .detail-metrics {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+    padding-top: 14px;
+    border-top: 1px dotted rgba(20,19,15,0.18);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .detail-metrics .metric strong {
+    color: var(--ink);
+    font-weight: 500;
+    margin-left: 6px;
+  }
+  .detail-metrics .metric .pos { color: var(--bull); }
+  .detail-metrics .metric .neg { color: var(--bear); }
   td.yield { text-align: right; white-space: nowrap; }
   td.yield .yield-val {
     font-family: var(--font-display);
@@ -357,6 +379,27 @@
     letter-spacing: 0.06em;
     margin-top: 3px;
   }
+
+  td.edge { text-align: right; white-space: nowrap; }
+  td.edge .edge-val {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 13px;
+    color: var(--ink-mute);
+  }
+  td.edge .edge-val.pos { color: var(--bull); }
+  td.edge .edge-val.neg { color: var(--bear); }
+
+  td.kelly { text-align: right; white-space: nowrap; }
+  td.kelly .kelly-val {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 13px;
+    color: var(--ink-mute);
+  }
+  td.kelly .kelly-val.low { color: var(--ink-mute); }
+  td.kelly .kelly-val.mid { color: var(--ink); }
+  td.kelly .kelly-val.high { color: var(--accent); font-weight: 600; }
 
   td.risk { text-align: center; }
   .risk-dots { display: inline-flex; gap: 3px; align-items: center; }
@@ -614,6 +657,8 @@
           <th data-key="price" class="num-h hide-sm" style="text-align:right">Price</th>
           <th data-key="absolute_payoff_pct" class="num-h hide-md" style="text-align:right">Payoff</th>
           <th data-key="yield_apr" class="sorted num-h" style="text-align:right">APR <span class="arrow">&#9660;</span></th>
+          <th data-key="edge_pct" class="num-h hide-sm" style="text-align:right">Edge</th>
+          <th data-key="kelly_fraction" class="num-h hide-sm" style="text-align:right">Kelly</th>
           <th data-key="days_to_resolution" class="num-h" style="text-align:right">Resolves</th>
           <th data-key="risk_score" class="hide-sm" style="text-align:center">Risk</th>
           <th></th>
@@ -771,6 +816,31 @@ function renderRow(r, i) {
   yTd.appendChild(yieldCell(r.yield_apr));
   tr.appendChild(yTd);
 
+  const edgeTd = el("td", { class: "num edge hide-sm" });
+  if (r.edge_pct === null || r.edge_pct === undefined) {
+    edgeTd.appendChild(el("span", { class: "edge-val" }, "—"));
+  } else {
+    let cls = "edge-val";
+    if (r.edge_pct > 0.05) cls += " pos";
+    else if (r.edge_pct < -0.05) cls += " neg";
+    const sign = r.edge_pct > 0 ? "+" : "";
+    edgeTd.appendChild(el("span", { class: cls }, sign + r.edge_pct.toFixed(1) + "pp"));
+  }
+  tr.appendChild(edgeTd);
+
+  const kellyTd = el("td", { class: "num kelly hide-sm" });
+  if (r.kelly_fraction === null || r.kelly_fraction === undefined) {
+    kellyTd.appendChild(el("span", { class: "kelly-val" }, "—"));
+  } else {
+    const pct = r.kelly_fraction * 100;
+    let cls = "kelly-val";
+    if (pct < 5) cls += " low";
+    else if (pct <= 25) cls += " mid";
+    else cls += " high";
+    kellyTd.appendChild(el("span", { class: cls }, pct.toFixed(0) + "%"));
+  }
+  tr.appendChild(kellyTd);
+
   const daysTd = el("td", { class: "days" });
   daysTd.appendChild(el("span", { class: "days-num" }, r.days_to_resolution + "d"));
   daysTd.appendChild(el("span", { class: "end-date" }, fmt.date(r.end_date)));
@@ -787,7 +857,7 @@ function renderRow(r, i) {
 
 function renderDetailRow(r) {
   const tr = el("tr", { class: "detail open" });
-  const td = el("td", { colspan: "9" });
+  const td = el("td", { colspan: "11" });
   const inner = el("div", { class: "detail-inner" });
 
   const summary = el("div", { class: "detail-block summary" });
@@ -805,6 +875,36 @@ function renderDetailRow(r) {
   cta.appendChild(a);
   cta.appendChild(el("span", { class: "slug" }, "/" + r.slug));
   inner.appendChild(cta);
+
+  const metrics = el("div", { class: "detail-metrics" });
+
+  const pWinM = el("div", { class: "metric" }, "Subjective P(win)");
+  if (r.subjective_p_win === null || r.subjective_p_win === undefined) {
+    pWinM.appendChild(el("strong", null, "—"));
+  } else {
+    pWinM.appendChild(el("strong", null, (r.subjective_p_win * 100).toFixed(1) + "%"));
+  }
+  metrics.appendChild(pWinM);
+
+  const edgeM = el("div", { class: "metric" }, "Edge");
+  if (r.edge_pct === null || r.edge_pct === undefined) {
+    edgeM.appendChild(el("strong", null, "—"));
+  } else {
+    const cls = r.edge_pct > 0.05 ? "pos" : (r.edge_pct < -0.05 ? "neg" : "");
+    const sign = r.edge_pct > 0 ? "+" : "";
+    edgeM.appendChild(el("strong", { class: cls }, sign + r.edge_pct.toFixed(2) + "pp"));
+  }
+  metrics.appendChild(edgeM);
+
+  const kellyM = el("div", { class: "metric" }, "Kelly");
+  if (r.kelly_fraction === null || r.kelly_fraction === undefined) {
+    kellyM.appendChild(el("strong", null, "—"));
+  } else {
+    kellyM.appendChild(el("strong", null, (r.kelly_fraction * 100).toFixed(1) + "%"));
+  }
+  metrics.appendChild(kellyM);
+
+  inner.appendChild(metrics);
 
   td.appendChild(inner);
   tr.appendChild(td);

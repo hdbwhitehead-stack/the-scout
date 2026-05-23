@@ -51,6 +51,7 @@ def test_judge_candidate_parses_model_json() -> None:
         {
             "risk_score": 2,
             "risk_rationale": "Resolution criterion is mostly clear.",
+            "subjective_p_win": 0.97,
             "summary": "Bet NO that X happens, paying 10% APR.",
         }
     )
@@ -82,6 +83,7 @@ def test_judge_candidate_parses_model_json() -> None:
     assert judgment.risk_score == 2
     assert "mostly clear" in judgment.risk_rationale
     assert "10% APR" in judgment.summary
+    assert judgment.subjective_p_win == 0.97
 
 
 def test_store_judgment_writes_row(tmp_db: Path, sample_market: dict) -> None:
@@ -96,7 +98,10 @@ def test_store_judgment_writes_row(tmp_db: Path, sample_market: dict) -> None:
         yield_apr=0.10,
     )
     judgment = Judgment(
-        risk_score=2, risk_rationale="Clear.", summary="Bet NO."
+        risk_score=2,
+        risk_rationale="Clear.",
+        summary="Bet NO.",
+        subjective_p_win=0.96,
     )
     store_judgment(
         conn,
@@ -112,3 +117,4 @@ def test_store_judgment_writes_row(tmp_db: Path, sample_market: dict) -> None:
     assert row is not None
     assert row["risk_score"] == 2
     assert row["yield_apr"] == 0.10
+    assert row["subjective_p_win"] == 0.96

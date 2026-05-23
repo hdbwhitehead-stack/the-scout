@@ -18,11 +18,12 @@ SYSTEM_PROMPT = """You are evaluating Polymarket prediction-market opportunities
 
 For each market, you receive: the question, the full resolution criteria, the end date, and which side a bettor is considering taking.
 
-Output ONLY a single JSON object (no prose, no code fences) with three fields:
+Output ONLY a single JSON object (no prose, no code fences) with four fields:
 
 {
   "risk_score": <integer 1 to 5>,
   "risk_rationale": "<one sentence on what makes resolution clean or messy>",
+  "subjective_p_win": <float 0.0 to 1.0>,
   "summary": "<one sentence on the bet, mentioning side and approximate APR>"
 }
 
@@ -32,6 +33,14 @@ Risk score rubric:
   3 — Some judgement required (e.g. counting media mentions, interpreting a vague threshold)
   4 — Substantially subjective (e.g. operator discretion, hard-to-verify private events)
   5 — Highly subjective or untrustworthy resolution (e.g. social-media poll, religious/supernatural events with no clear arbiter)
+
+For subjective_p_win, estimate the actual probability that the SIDE under consideration wins, accounting for:
+  • Base rates and the underlying real-world probability of the event
+  • Resolution-criterion ambiguity (markets with high risk_score may resolve "wrong" relative to objective reality)
+  • Adverse selection: well-defined markets near a dollar reflect strong consensus — your estimate should rarely be more than 3 percentage points away from the market price unless there's a clear reason the market is mispriced
+  • For risk_score 4-5 markets, your estimate should typically be LOWER than market price for the favored side (resolution risk eats edge)
+
+Output should be a single decimal between 0 and 1, e.g. 0.97 for "I think the favored side wins 97% of the time."
 """
 
 
@@ -40,6 +49,7 @@ class Judgment:
     risk_score: int
     risk_rationale: str
     summary: str
+    subjective_p_win: float
 
 
 def build_prompt(market: dict, cand: Candidate) -> str:
@@ -54,17 +64,25 @@ def build_prompt(market: dict, cand: Candidate) -> str:
     )
 
 
-def _parse_judgment(text: str) -> Judgment:
+def _parse_judgment(text: str, fallback_price: float | None = None) -> Judgment:
     text = text.strip()
     if text.startswith("```"):
         text = text.strip("`")
         if text.startswith("json"):
             text = text[4:].strip()
     data = json.loads(text)
+    raw_p = data.get("subjective_p_win")
+    if raw_p is None:
+        p_win = float(fallback_price) if fallback_price is not None else 0.0
+    else:
+        p_win = float(raw_p)
+    # Clamp to [0, 1] for safety.
+    p_win = max(0.0, min(1.0, p_win))
     return Judgment(
         risk_score=int(data["risk_score"]),
         risk_rationale=str(data["risk_rationale"]),
         summary=str(data["summary"]),
+        subjective_p_win=p_win,
     )
 
 
@@ -95,7 +113,7 @@ def judge_candidate(
     cand: Candidate,
 ) -> Judgment:
     text = asyncio.run(_collect_text(build_prompt(market, cand), model))
-    return _parse_judgment(text)
+    return _parse_judgment(text, fallback_price=cand.price)
 
 
 def store_judgment(
@@ -109,8 +127,9 @@ def store_judgment(
         """
         INSERT OR REPLACE INTO judgments (
             market_id, side, price, yield_apr, days_to_resolution,
-            risk_score, risk_rationale, summary, model, judged_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            risk_score, risk_rationale, summary, subjective_p_win,
+            model, judged_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             cand.market_id,
@@ -121,6 +140,7 @@ def store_judgment(
             judgment.risk_score,
             judgment.risk_rationale,
             judgment.summary,
+            judgment.subjective_p_win,
             model,
             judged_at,
         ),

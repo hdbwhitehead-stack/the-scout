@@ -47,7 +47,8 @@ def collect_rows(
     markets = {row["id"]: dict(row) for row in cur.fetchall()}
 
     cur = conn.execute(
-        f"SELECT market_id, side, risk_score, risk_rationale, summary "
+        f"SELECT market_id, side, risk_score, risk_rationale, summary, "
+        f"subjective_p_win "
         f"FROM judgments WHERE model = ? AND market_id IN ({placeholders})",
         [model, *ids],
     )
@@ -67,6 +68,7 @@ def collect_rows(
                 "risk_score": j.get("risk_score"),
                 "risk_rationale": j.get("risk_rationale"),
                 "summary": j.get("summary"),
+                "subjective_p_win": j.get("subjective_p_win"),
                 "question": m.get("question", ""),
                 "slug": m.get("slug", ""),
                 "platform": m.get("platform"),
@@ -81,11 +83,27 @@ def collect_rows(
     return rows
 
 
+def _kelly_fraction(price: float, p_win: float) -> float:
+    """Classic binary-bet Kelly, clamped to [0, 1]. Returns 0 when no edge."""
+    if price <= 0 or price >= 1 or p_win is None:
+        return 0.0
+    b = (1 - price) / price
+    f = (b * p_win - (1 - p_win)) / b
+    return max(0.0, min(1.0, f))
+
+
 def enrich_rows(rows: list[dict]) -> list[dict]:
-    """Compute derived display fields (absolute_payoff_pct, duration_bucket)."""
+    """Compute derived display fields (absolute_payoff_pct, duration_bucket, edge, kelly)."""
     for r in rows:
         r["absolute_payoff_pct"] = (1 - r["price"]) * 100
         r["duration_bucket"] = duration_bucket(r["days_to_resolution"])
+        p_win = r.get("subjective_p_win")
+        if p_win is not None:
+            r["edge_pct"] = (p_win - r["price"]) * 100
+            r["kelly_fraction"] = _kelly_fraction(r["price"], p_win)
+        else:
+            r["edge_pct"] = None
+            r["kelly_fraction"] = None
     return rows
 
 
