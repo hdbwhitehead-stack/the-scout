@@ -123,7 +123,8 @@ def render(
     """Write docs/index.html and docs/data.json."""
     conn = _open(db_path)
     cfg = _load(config_path)
-    render_report(conn, cfg, out_dir=out_dir, generated_at=_now_iso())
+    candidates = _all_candidates(conn, cfg, date.today())
+    render_report(conn, candidates, cfg, out_dir=out_dir, generated_at=_now_iso())
     console.print(f"Wrote {out_dir / 'index.html'} and {out_dir / 'data.json'}.")
 
 
@@ -164,7 +165,7 @@ def run(
         store_judgment(conn, cand, judgment, model=cfg.model, judged_at=_now_iso())
         console.print(f"  judged [{i}/{len(new)}] {cand.market_id} risk={judgment.risk_score}")
 
-    render_report(conn, cfg, out_dir=out_dir, generated_at=_now_iso())
+    render_report(conn, cands, cfg, out_dir=out_dir, generated_at=_now_iso())
     console.print(f"render: {out_dir / 'index.html'}")
 
     finish_run(conn, run_id, finished_at=_now_iso(),
@@ -180,7 +181,8 @@ def list_cmd(
     """Print the top N current opportunities as a terminal table."""
     conn = _open(db_path)
     cfg = _load(config_path)
-    rows = collect_rows(conn, model=cfg.model)[:top]
+    candidates = _all_candidates(conn, cfg, date.today())
+    rows = collect_rows(conn, candidates, model=cfg.model)[:top]
     table = Table(title=f"Top {len(rows)} opportunities")
     table.add_column("Yield APR", justify="right")
     table.add_column("Days", justify="right")

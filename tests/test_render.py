@@ -20,15 +20,19 @@ def _cfg() -> Config:
     )
 
 
-def _seed(conn, sample_market):
-    upsert_market(conn, sample_market, fetched_at="2026-05-23T00:00:00Z")
-    cand = Candidate(
+def _candidate(sample_market: dict) -> Candidate:
+    return Candidate(
         market_id=sample_market["id"],
         side="NO",
         price=0.94,
         days_to_resolution=220,
         yield_apr=0.106,
     )
+
+
+def _seed_judged(conn, sample_market):
+    upsert_market(conn, sample_market, fetched_at="2026-05-23T00:00:00Z")
+    cand = _candidate(sample_market)
     judgment = Judgment(
         risk_score=5,
         risk_rationale="Resolution depends on supernatural verification — no clean arbiter.",
@@ -37,6 +41,7 @@ def _seed(conn, sample_market):
     store_judgment(
         conn, cand, judgment, model="claude-haiku-4-5", judged_at="2026-05-23T01:00:00Z"
     )
+    return cand
 
 
 def test_duration_bucket_boundaries() -> None:
@@ -51,8 +56,8 @@ def test_duration_bucket_boundaries() -> None:
 def test_collect_rows_joins_markets_and_judgments(tmp_db: Path, sample_market: dict) -> None:
     conn = connect(tmp_db)
     init_schema(conn)
-    _seed(conn, sample_market)
-    rows = collect_rows(conn, model="claude-haiku-4-5")
+    cand = _seed_judged(conn, sample_market)
+    rows = collect_rows(conn, [cand], model="claude-haiku-4-5")
     assert len(rows) == 1
     row = rows[0]
     assert row["question"] == sample_market["question"]
@@ -62,11 +67,30 @@ def test_collect_rows_joins_markets_and_judgments(tmp_db: Path, sample_market: d
     assert row["primary_tag"] == "Religion"
 
 
+def test_collect_rows_includes_unjudged_candidates(tmp_db: Path, sample_market: dict) -> None:
+    conn = connect(tmp_db)
+    init_schema(conn)
+    upsert_market(conn, sample_market, fetched_at="2026-05-23T00:00:00Z")
+    cand = _candidate(sample_market)
+    # Note: NOT storing a judgment
+    rows = collect_rows(conn, [cand], model="claude-haiku-4-5")
+    assert len(rows) == 1
+    row = rows[0]
+    assert row["question"] == sample_market["question"]
+    assert row["side"] == "NO"
+    assert row["price"] == pytest.approx(0.94)
+    assert row["yield_apr"] == pytest.approx(0.106)
+    assert row["days_to_resolution"] == 220
+    assert row["risk_score"] is None
+    assert row["risk_rationale"] is None
+    assert row["summary"] is None
+
+
 def test_enrich_rows_adds_payoff_and_bucket(tmp_db: Path, sample_market: dict) -> None:
     conn = connect(tmp_db)
     init_schema(conn)
-    _seed(conn, sample_market)
-    rows = enrich_rows(collect_rows(conn, model="claude-haiku-4-5"))
+    cand = _seed_judged(conn, sample_market)
+    rows = enrich_rows(collect_rows(conn, [cand], model="claude-haiku-4-5"))
     row = rows[0]
     # absolute_payoff_pct = (1 - 0.94) * 100 = 6.0
     assert row["absolute_payoff_pct"] == pytest.approx(6.0, abs=1e-6)
@@ -76,11 +100,12 @@ def test_enrich_rows_adds_payoff_and_bucket(tmp_db: Path, sample_market: dict) -
 def test_render_report_writes_html_and_json(tmp_db: Path, tmp_path: Path, sample_market: dict) -> None:
     conn = connect(tmp_db)
     init_schema(conn)
-    _seed(conn, sample_market)
+    cand = _seed_judged(conn, sample_market)
     out_dir = tmp_path / "docs"
     out_dir.mkdir()
     render_report(
         conn,
+        [cand],
         cfg=_cfg(),
         out_dir=out_dir,
         generated_at="2026-05-23T02:00:00Z",

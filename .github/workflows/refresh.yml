@@ -1,0 +1,53 @@
+name: Refresh docket
+
+# Daily fetch + render. Runs on a US-based GitHub Actions runner so it can
+# reach the Polymarket Gamma API even if the maintainer's home network is
+# geo-blocked.
+#
+# Note: this workflow deliberately does NOT call `scout judge`. The judge
+# agent uses `claude-agent-sdk`, which authenticates via the local Claude
+# Code session rather than an `ANTHROPIC_API_KEY`. Until `judge.py` grows a
+# fallback path keyed off the env var, CI cannot judge new candidates on
+# its own. Cached judgments in `scout.db` (committed to the repo) are still
+# surfaced; new unjudged candidates render with empty risk fields.
+
+on:
+  schedule:
+    # 06:00 UTC daily — early afternoon AEST.
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+
+      - name: Sync dependencies
+        run: uv sync
+
+      - name: Fetch markets
+        run: uv run scout fetch
+
+      - name: Render docket
+        run: uv run scout render
+
+      - name: Commit refreshed docket
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ scout.db
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: refresh docket [skip ci]"
+            git push
+          fi

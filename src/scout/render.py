@@ -8,6 +8,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from scout.config import Config
+from scout.score import Candidate
 
 TEMPLATES_DIR = Path(__file__).resolve().parents[2] / "templates"
 
@@ -21,21 +22,62 @@ def duration_bucket(days: int) -> str:
     return "366–730d"
 
 
-def collect_rows(conn: sqlite3.Connection, model: str) -> list[dict]:
+def collect_rows(
+    conn: sqlite3.Connection,
+    candidates: list[Candidate],
+    model: str,
+) -> list[dict]:
+    """Build display rows from today's candidates joined with markets and (optional) judgments.
+
+    Every candidate appears as a row. Judgment fields are populated when a cached
+    judgment exists for (market_id, side) under the given model; otherwise they
+    remain None so the report can show unjudged candidates explicitly.
+    """
+    if not candidates:
+        return []
+
+    ids = [c.market_id for c in candidates]
+    placeholders = ",".join("?" * len(ids))
+
     cur = conn.execute(
-        """
-        SELECT j.market_id, j.side, j.price, j.yield_apr, j.days_to_resolution,
-               j.risk_score, j.risk_rationale, j.summary,
-               m.question, m.slug, m.primary_tag, m.end_date,
-               m.volume, m.liquidity
-          FROM judgments j
-          JOIN markets m ON m.id = j.market_id
-         WHERE j.model = ?
-         ORDER BY j.yield_apr DESC
-        """,
-        (model,),
+        f"SELECT id, question, slug, primary_tag, end_date, volume, liquidity "
+        f"FROM markets WHERE id IN ({placeholders})",
+        ids,
     )
-    return [dict(row) for row in cur.fetchall()]
+    markets = {row["id"]: dict(row) for row in cur.fetchall()}
+
+    cur = conn.execute(
+        f"SELECT market_id, side, risk_score, risk_rationale, summary "
+        f"FROM judgments WHERE model = ? AND market_id IN ({placeholders})",
+        [model, *ids],
+    )
+    judgments = {(row["market_id"], row["side"]): dict(row) for row in cur.fetchall()}
+
+    rows: list[dict] = []
+    for c in candidates:
+        m = markets.get(c.market_id, {})
+        j = judgments.get((c.market_id, c.side), {})
+        rows.append(
+            {
+                "market_id": c.market_id,
+                "side": c.side,
+                "price": c.price,
+                "yield_apr": c.yield_apr,
+                "days_to_resolution": c.days_to_resolution,
+                "risk_score": j.get("risk_score"),
+                "risk_rationale": j.get("risk_rationale"),
+                "summary": j.get("summary"),
+                "question": m.get("question", ""),
+                "slug": m.get("slug", ""),
+                "primary_tag": m.get("primary_tag"),
+                "end_date": m.get("end_date"),
+                "volume": m.get("volume"),
+                "liquidity": m.get("liquidity"),
+            }
+        )
+
+    rows.sort(key=lambda r: r["yield_apr"], reverse=True)
+    return rows
 
 
 def enrich_rows(rows: list[dict]) -> list[dict]:
@@ -48,11 +90,12 @@ def enrich_rows(rows: list[dict]) -> list[dict]:
 
 def render_report(
     conn: sqlite3.Connection,
+    candidates: list[Candidate],
     cfg: Config,
     out_dir: Path,
     generated_at: str,
 ) -> None:
-    rows = enrich_rows(collect_rows(conn, model=cfg.model))
+    rows = enrich_rows(collect_rows(conn, candidates, model=cfg.model))
 
     env = Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),

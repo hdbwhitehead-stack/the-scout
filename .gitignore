@@ -2,7 +2,5 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-scout.db
-scout.db-journal
 .env
 .DS_Store
