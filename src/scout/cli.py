@@ -1,7 +1,6 @@
 """Polymarket Scout CLI."""
 from __future__ import annotations
 
-import os
 import sqlite3
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -92,25 +91,17 @@ def judge(
     config_path: Path = typer.Option(DEFAULT_CONFIG, "--config"),
 ) -> None:
     """Call Claude Haiku on unjudged candidates and cache results."""
-    import anthropic
-
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        console.print("[red]ANTHROPIC_API_KEY is not set.[/red]")
-        raise typer.Exit(code=1)
-
     conn = _open(db_path)
     cfg = _load(config_path)
     cands = _all_candidates(conn, cfg, date.today())
     new = unjudged_candidates(conn, cands, model=cfg.model)
     console.print(f"{len(new)} new candidates to judge ({len(cands) - len(new)} cached).")
 
-    client = anthropic.Anthropic(api_key=api_key)
     for i, cand in enumerate(new, 1):
         cur = conn.execute("SELECT * FROM markets WHERE id = ?", (cand.market_id,))
         market = dict(cur.fetchone())
         try:
-            judgment = judge_candidate(client, cfg.model, market, cand)
+            judgment = judge_candidate(cfg.model, market, cand)
         except Exception as exc:
             console.print(f"  [yellow]skip {cand.market_id}: {exc}[/yellow]")
             continue
@@ -151,23 +142,16 @@ def run(
 
     new = unjudged_candidates(conn, cands, model=cfg.model)
     if new:
-        import anthropic
-
-        api_key = os.environ.get("ANTHROPIC_API_KEY")
-        if not api_key:
-            console.print("[red]ANTHROPIC_API_KEY is not set; skipping judge stage.[/red]")
-        else:
-            client = anthropic.Anthropic(api_key=api_key)
-            for i, cand in enumerate(new, 1):
-                cur = conn.execute("SELECT * FROM markets WHERE id = ?", (cand.market_id,))
-                market = dict(cur.fetchone())
-                try:
-                    judgment = judge_candidate(client, cfg.model, market, cand)
-                except Exception as exc:
-                    console.print(f"  [yellow]skip {cand.market_id}: {exc}[/yellow]")
-                    continue
-                store_judgment(conn, cand, judgment, model=cfg.model, judged_at=_now_iso())
-                console.print(f"  judged [{i}/{len(new)}] {cand.market_id} risk={judgment.risk_score}")
+        for i, cand in enumerate(new, 1):
+            cur = conn.execute("SELECT * FROM markets WHERE id = ?", (cand.market_id,))
+            market = dict(cur.fetchone())
+            try:
+                judgment = judge_candidate(cfg.model, market, cand)
+            except Exception as exc:
+                console.print(f"  [yellow]skip {cand.market_id}: {exc}[/yellow]")
+                continue
+            store_judgment(conn, cand, judgment, model=cfg.model, judged_at=_now_iso())
+            console.print(f"  judged [{i}/{len(new)}] {cand.market_id} risk={judgment.risk_score}")
     else:
         console.print("judge: all candidates already cached")
 

@@ -1,10 +1,16 @@
 """Claude Haiku judge agent."""
 from __future__ import annotations
 
+import asyncio
 import json
 import sqlite3
 from dataclasses import dataclass
-from typing import Any
+
+from claude_agent_sdk import (
+    AssistantMessage,
+    ClaudeAgentOptions,
+    query,
+)
 
 from scout.score import Candidate
 
@@ -48,27 +54,33 @@ def build_prompt(market: dict, cand: Candidate) -> str:
     )
 
 
-def _extract_text(response: Any) -> str:
-    for block in response.content:
-        text = getattr(block, "text", None)
-        if text:
-            return text
-    raise ValueError("Anthropic response contained no text blocks")
+async def _collect_text(prompt: str, model: str) -> str:
+    """Send a one-shot prompt via claude-agent-sdk and return the assistant text."""
+    options = ClaudeAgentOptions(
+        system_prompt=SYSTEM_PROMPT,
+        model=model,
+        allowed_tools=[],
+        max_turns=1,
+        setting_sources=None,
+    )
+    chunks: list[str] = []
+    async for msg in query(prompt=prompt, options=options):
+        if isinstance(msg, AssistantMessage):
+            for block in msg.content:
+                text = getattr(block, "text", None)
+                if text:
+                    chunks.append(text)
+    if not chunks:
+        raise ValueError("claude-agent-sdk response contained no text blocks")
+    return "".join(chunks)
 
 
 def judge_candidate(
-    client: Any,
     model: str,
     market: dict,
     cand: Candidate,
 ) -> Judgment:
-    response = client.messages.create(
-        model=model,
-        max_tokens=400,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": build_prompt(market, cand)}],
-    )
-    text = _extract_text(response).strip()
+    text = asyncio.run(_collect_text(build_prompt(market, cand), model)).strip()
     if text.startswith("```"):
         text = text.strip("`")
         if text.startswith("json"):

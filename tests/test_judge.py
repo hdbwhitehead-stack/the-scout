@@ -1,11 +1,28 @@
 """Tests for the Claude Haiku judge agent."""
 import json
+from dataclasses import dataclass
 from pathlib import Path
-from unittest.mock import MagicMock
+from unittest.mock import patch
 
 from scout.db import connect, init_schema, upsert_market
 from scout.judge import Judgment, build_prompt, judge_candidate, store_judgment
 from scout.score import Candidate
+
+
+@dataclass
+class _FakeBlock:
+    text: str
+
+
+class _FakeAssistantMessage:
+    """Stand-in for claude_agent_sdk.AssistantMessage in tests.
+
+    judge._collect_text uses isinstance(msg, AssistantMessage) to filter,
+    so we patch that class reference too via the fixture below.
+    """
+
+    def __init__(self, text: str) -> None:
+        self.content = [_FakeBlock(text=text)]
 
 
 def test_build_prompt_includes_market_details() -> None:
@@ -30,20 +47,16 @@ def test_build_prompt_includes_market_details() -> None:
 
 
 def test_judge_candidate_parses_model_json() -> None:
-    fake_client = MagicMock()
-    fake_response = MagicMock()
-    fake_response.content = [
-        MagicMock(
-            text=json.dumps(
-                {
-                    "risk_score": 2,
-                    "risk_rationale": "Resolution criterion is mostly clear.",
-                    "summary": "Bet NO that X happens, paying 10% APR.",
-                }
-            )
-        )
-    ]
-    fake_client.messages.create.return_value = fake_response
+    payload = json.dumps(
+        {
+            "risk_score": 2,
+            "risk_rationale": "Resolution criterion is mostly clear.",
+            "summary": "Bet NO that X happens, paying 10% APR.",
+        }
+    )
+
+    async def fake_query(*args, **kwargs):
+        yield _FakeAssistantMessage(payload)
 
     market = {
         "id": "m1",
@@ -59,7 +72,12 @@ def test_judge_candidate_parses_model_json() -> None:
         yield_apr=0.10,
     )
 
-    judgment = judge_candidate(fake_client, "claude-haiku-4-5", market, cand)
+    # Patch the AssistantMessage class so isinstance() inside judge.py
+    # matches our fake message, and patch query to return our async generator.
+    with patch("scout.judge.AssistantMessage", _FakeAssistantMessage), \
+         patch("scout.judge.query", fake_query):
+        judgment = judge_candidate("claude-haiku-4-5", market, cand)
+
     assert isinstance(judgment, Judgment)
     assert judgment.risk_score == 2
     assert "mostly clear" in judgment.risk_rationale
