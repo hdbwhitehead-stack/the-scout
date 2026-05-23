@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Scout - Polymarket Docket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #f3ede1;
+    --paper-2: #ebe3d3;
+    --rule: #1a1a1a;
+    --ink: #14130f;
+    --ink-soft: #4a463c;
+    --ink-mute: #807a6c;
+    --accent: #a8331f;
+    --accent-deep: #6e1f0f;
+    --gold: #b5893d;
+    --grid: rgba(20,19,15,0.08);
+    --bull: #2f6b3a;
+    --bear: #a8331f;
+    --r1: #2f6b3a;
+    --r2: #6a7d2c;
+    --r3: #b5893d;
+    --r4: #c66a1c;
+    --r5: #a8331f;
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Inter Tight", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+
+  html { background: var(--paper); }
+  body {
+    margin: 0;
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.5;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(168,51,31,0.06), transparent 60%),
+      radial-gradient(800px 500px at -10% 110%, rgba(181,137,61,0.07), transparent 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.08  0 0 0 0 0.08  0 0 0 0 0.06  0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+      var(--paper);
+    background-attachment: fixed;
+  }
+
+  ::selection { background: var(--accent); color: var(--paper); }
+
+  a { color: var(--accent-deep); text-decoration: none; border-bottom: 1px solid rgba(110,31,15,0.35); }
+  a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .frame {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 36px 40px 80px;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-top: 3px double var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 22px 0 18px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+    gap: 24px;
+  }
+  .masthead .left, .masthead .right {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .masthead .right { text-align: right; }
+  .wordmark { text-align: center; line-height: 1; }
+  .wordmark .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .wordmark h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 1;
+    font-size: clamp(48px, 7vw, 92px);
+    margin: 0;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+  }
+  .wordmark h1 em {
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    color: var(--accent);
+  }
+  .wordmark .tagline {
+    margin-top: 10px;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--ink-soft);
+  }
+
+  /* LEDE */
+  .lede {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 60px;
+    padding: 28px 0 24px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .lede p {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.45;
+    margin: 0;
+    color: var(--ink);
+  }
+  .lede p .dropcap {
+    float: left;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 0.85;
+    padding: 6px 10px 0 0;
+    color: var(--accent);
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    align-self: end;
+  }
+  .stat { border-left: 1px solid var(--rule); padding-left: 14px; }
+  .stat .label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .stat .value {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.05;
+    margin-top: 4px;
+    font-variation-settings: "opsz" 60;
+  }
+  .stat .value small { font-size: 14px; color: var(--ink-mute); font-weight: 400; }
+
+  /* CONTROLS */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 36px;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .control-group { display: flex; align-items: center; gap: 10px; }
+  .control-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .chips { display: inline-flex; gap: 0; }
+  .chip {
+    border: 1px solid var(--rule);
+    background: transparent;
+    padding: 6px 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink);
+    cursor: pointer;
+    margin-left: -1px;
+    transition: background 120ms, color 120ms;
+  }
+  .chip:first-child { margin-left: 0; }
+  .chip:hover { background: rgba(20,19,15,0.06); }
+  .chip.active { background: var(--ink); color: var(--paper); }
+  select.tag-select {
+    appearance: none;
+    border: 1px solid var(--rule);
+    background: transparent;
+    padding: 6px 30px 6px 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink);
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%2314130f' stroke-width='1.2'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+  }
+  .search {
+    border: 1px solid var(--rule);
+    background: transparent;
+    padding: 6px 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--ink);
+    min-width: 220px;
+  }
+  .search::placeholder { color: var(--ink-mute); letter-spacing: 0.05em; text-transform: uppercase; }
+  .count {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .count strong { color: var(--ink); font-weight: 500; }
+
+  /* TABLE */
+  .docket-wrap { overflow-x: auto; }
+  table.docket {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  table.docket thead th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    padding: 14px 12px 10px;
+    border-bottom: 1px solid var(--rule);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background: var(--paper);
+    z-index: 2;
+  }
+  table.docket thead th:hover { color: var(--ink); }
+  table.docket thead th.sorted { color: var(--accent); }
+  table.docket thead th .arrow {
+    display: inline-block;
+    width: 8px;
+    margin-left: 4px;
+    color: var(--accent);
+  }
+  table.docket tbody tr.market {
+    border-bottom: 1px dotted rgba(20,19,15,0.18);
+    cursor: pointer;
+    transition: background 100ms;
+  }
+  table.docket tbody tr.market:hover { background: rgba(168,51,31,0.04); }
+  table.docket tbody tr.market.open { background: rgba(168,51,31,0.05); }
+  table.docket tbody td { padding: 16px 12px; vertical-align: top; }
+
+  td.idx {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-variation-settings: "opsz" 144;
+    color: var(--ink-mute);
+    font-size: 22px;
+    line-height: 1;
+    width: 36px;
+    padding-top: 18px;
+  }
+
+  td.q .question {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.25;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+    max-width: 460px;
+  }
+  td.q .meta {
+    margin-top: 6px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  td.q .meta .tag { color: var(--accent-deep); }
+  td.q .meta .dot { color: var(--ink-mute); }
+
+  .side {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    padding: 3px 8px;
+    border: 1px solid currentColor;
+    text-transform: uppercase;
+  }
+  .side.YES { color: var(--bull); }
+  .side.NO  { color: var(--bear); }
+
+  td.num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-align: right;
+    white-space: nowrap;
+  }
+  td.price .price-val { color: var(--ink); }
+  td.payoff .payoff-val { color: var(--ink); font-weight: 500; }
+  td.yield { text-align: right; white-space: nowrap; }
+  td.yield .yield-val {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 60;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: -0.01em;
+  }
+  td.yield .yield-val .pct {
+    font-size: 14px;
+    color: var(--accent);
+    margin-left: 1px;
+    font-weight: 400;
+  }
+  td.days {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-align: right;
+  }
+  td.days .days-num { color: var(--ink); font-size: 14px; }
+  td.days .end-date {
+    display: block;
+    color: var(--ink-mute);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    margin-top: 3px;
+  }
+
+  td.risk { text-align: center; }
+  .risk-dots { display: inline-flex; gap: 3px; align-items: center; }
+  .risk-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: rgba(20,19,15,0.12);
+  }
+  .risk-dot.on.r1 { background: var(--r1); }
+  .risk-dot.on.r2 { background: var(--r2); }
+  .risk-dot.on.r3 { background: var(--r3); }
+  .risk-dot.on.r4 { background: var(--r4); }
+  .risk-dot.on.r5 { background: var(--r5); }
+
+  td.expand {
+    width: 24px;
+    text-align: right;
+    color: var(--ink-mute);
+    font-family: var(--font-mono);
+    font-size: 14px;
+  }
+  tr.market.open td.expand { color: var(--accent); }
+
+  tr.detail { display: none; }
+  tr.detail.open { display: table-row; }
+  tr.detail td {
+    padding: 0 12px 24px;
+    background: rgba(168,51,31,0.04);
+    border-bottom: 1px solid var(--rule);
+  }
+  .detail-inner {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr auto;
+    gap: 36px;
+    padding: 18px 24px 8px;
+    border-top: 1px dotted rgba(20,19,15,0.18);
+    margin-top: -1px;
+  }
+  .detail-block .detail-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 6px;
+  }
+  .detail-block .detail-text {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--ink);
+    max-width: 56ch;
+  }
+  .detail-block.summary .detail-text { font-style: normal; }
+  .detail-cta { align-self: end; text-align: right; }
+  .detail-cta a.market-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: background 120ms;
+  }
+  .detail-cta a.market-link:hover { background: var(--accent); border: none; }
+  .detail-cta a.market-link::after { content: "\2192"; font-size: 14px; }
+  .detail-cta .slug {
+    display: block;
+    margin-top: 8px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--ink-mute);
+    letter-spacing: 0.06em;
+  }
+
+  /* COLOPHON */
+  .colophon {
+    margin-top: 64px;
+    border-top: 3px double var(--rule);
+    padding-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+  }
+  .colophon h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    margin: 0;
+    color: var(--accent);
+    line-height: 1;
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+  }
+  .colophon .label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 8px;
+  }
+  details.method {
+    border-bottom: 1px dotted rgba(20,19,15,0.25);
+    padding: 14px 0;
+  }
+  details.method[open] summary::after { content: "\2212"; }
+  details.method summary {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: var(--ink);
+  }
+  details.method summary::-webkit-details-marker { display: none; }
+  details.method summary::after {
+    content: "+";
+    font-family: var(--font-mono);
+    font-size: 16px;
+    color: var(--accent);
+  }
+  details.method p {
+    margin: 10px 0 4px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--ink-soft);
+    max-width: 64ch;
+  }
+  details.method code {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: rgba(20,19,15,0.06);
+    padding: 1px 5px;
+  }
+
+  /* FOOTER */
+  footer.foot {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  footer.foot .disclaimer {
+    font-style: italic;
+    font-family: var(--font-display);
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 900px) {
+    .frame { padding: 24px 18px 60px; }
+    .lede { grid-template-columns: 1fr; gap: 28px; }
+    .controls { gap: 16px; }
+    .count { margin-left: 0; width: 100%; }
+    .colophon { grid-template-columns: 1fr; gap: 24px; }
+    table.docket thead th, table.docket tbody td { padding: 10px 8px; }
+    td.q .question { font-size: 15px; }
+    td.yield .yield-val { font-size: 20px; }
+    .detail-inner { grid-template-columns: 1fr; padding: 18px 8px; }
+    .hide-md { display: none; }
+  }
+  @media (max-width: 600px) {
+    .masthead { grid-template-columns: 1fr; text-align: center; }
+    .masthead .left, .masthead .right { text-align: center; }
+    .hide-sm { display: none; }
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: none; }
+  }
+  table.docket tbody tr.market { animation: rise 360ms both; }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <header class="masthead">
+    <div class="left">Vol. I &middot; No. 47</div>
+    <div class="wordmark">
+      <div class="eyebrow">A Polymarket Docket</div>
+      <h1>The <em>Scout</em></h1>
+      <div class="tagline">Tiny premiums for taking the obvious side.</div>
+    </div>
+    <div class="right">Updated <span id="updated-at">Sat, 23 May 2026 &middot; 09:14 ET</span></div>
+  </header>
+
+  <section class="lede">
+    <p>
+      <span class="dropcap">A</span> running ledger of Polymarket markets where the favored side trades near a dollar &mdash; yielding a small, positive premium for the bettor willing to accept a small, asymmetric loss. Think of it as selling lottery tickets to people who insist on buying them. Sorted by annualized return; resolution risk graded by an LLM judge. Not advice, merely arithmetic.
+    </p>
+    <div class="stats">
+      <div class="stat">
+        <div class="label">Markets</div>
+        <div class="value" id="stat-count">13</div>
+      </div>
+      <div class="stat">
+        <div class="label">Median APR</div>
+        <div class="value" id="stat-median">14.4<small>%</small></div>
+      </div>
+      <div class="stat">
+        <div class="label">Top Yield</div>
+        <div class="value" id="stat-top">33.7<small>%</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div class="control-group">
+      <span class="control-label">Tenor</span>
+      <div class="chips" id="duration-chips">
+        <button class="chip active" data-duration="all">All</button>
+        <button class="chip" data-duration="&le;90d">&le; 90d</button>
+        <button class="chip" data-duration="91&ndash;365d">91 &ndash; 365d</button>
+        <button class="chip" data-duration="366&ndash;730d">366 &ndash; 730d</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class="control-label">Category</span>
+      <select class="tag-select" id="tag-select"><option value="all">All categories</option></select>
+    </div>
+    <div class="control-group">
+      <span class="control-label">Search</span>
+      <input type="text" class="search" id="search" placeholder="Filter the docket&hellip;" />
+    </div>
+    <div class="count"><strong id="visible-count">13</strong> of <strong id="total-count">13</strong> shown</div>
+  </section>
+
+  <div class="docket-wrap">
+    <table class="docket" id="docket">
+      <thead>
+        <tr>
+          <th class="idx-h"></th>
+          <th data-key="question">Market</th>
+          <th data-key="side" class="hide-sm">Side</th>
+          <th data-key="price" class="num-h hide-sm" style="text-align:right">Price</th>
+          <th data-key="absolute_payoff_pct" class="num-h hide-md" style="text-align:right">Payoff</th>
+          <th data-key="yield_apr" class="sorted num-h" style="text-align:right">APR <span class="arrow">&#9660;</span></th>
+          <th data-key="days_to_resolution" class="num-h" style="text-align:right">Resolves</th>
+          <th data-key="risk_score" class="hide-sm" style="text-align:center">Risk</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <section class="colophon">
+    <div>
+      <div class="label">Colophon</div>
+      <h2>How to read<br/>the docket.</h2>
+    </div>
+    <div>
+      <details class="method" open>
+        <summary>What these bets actually are</summary>
+        <p>Each row is a short-tail-risk position. You collect a small premium in exchange for accepting a small probability of a large, total loss. The bet looks boring most of the time. That&rsquo;s the point. Over a large enough basket, the premiums compound; the occasional blow-up is the cost of doing business.</p>
+      </details>
+      <details class="method">
+        <summary>The APR figure, with caveats</summary>
+        <p>APR is computed as <code>(1 &minus; price) &divide; price &divide; years_to_resolution</code>, assuming the position is held to resolution. Early exit is possible but costs the bid-ask spread, which on Polymarket is often wider than the premium itself for thinly-traded markets. Watch the liquidity column.</p>
+      </details>
+      <details class="method">
+        <summary>What the risk score does and does not mean</summary>
+        <p>The risk score (1&ndash;5) is an LLM judge&rsquo;s read on the <em>resolution criterion</em>, not the market. A 5 means the question is ambiguous, depends on subjective adjudication, or could plausibly never resolve. A 1 means a clean, oracle-friendly question with a public-record answer. The score says nothing about whether the favored side will actually win.</p>
+      </details>
+      <details class="method">
+        <summary>Disclaimer, in plain English</summary>
+        <p>This is a research toy. It is not financial advice. Prediction markets are illegal in many jurisdictions and unregulated everywhere else. Do not bet money you cannot afford to lose. Do not bet money you can afford to lose, either, if you have not read the resolution rules in full. The author is, at best, a hobbyist.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div>Polymarket Scout &middot; Built quietly &middot; MMXXVI</div>
+    <div class="disclaimer">Not advice. Just arithmetic.</div>
+  </footer>
+
+</div>
+
+<script>
+"use strict";
+
+/* All data below is hardcoded; rendering uses safe DOM APIs (createElement + textContent). */
+const DATA = [
+  { question: "Will Jesus Christ be resurrected by December 31, 2026?", slug: "jesus-resurrection-2026", side: "NO", price: 0.94, absolute_payoff_pct: 6.4, yield_apr: 0.106, days_to_resolution: 222, duration_bucket: "91–365d", end_date: "2026-12-31", primary_tag: "Religion", risk_score: 5, risk_rationale: "Resolution depends on supernatural verification — there is no clean arbiter, and the market may default to ‘No’ regardless of actual events.", summary: "Bet NO on a second coming by year-end, paying ~6.4% absolute (10.6% APR) over seven months.", volume: 12345.67, liquidity: 2500 },
+  { question: "Will Joe Biden remain alive through 2026?", slug: "biden-alive-2026", side: "YES", price: 0.92, absolute_payoff_pct: 8.7, yield_apr: 0.144, days_to_resolution: 222, duration_bucket: "91–365d", end_date: "2026-12-31", primary_tag: "Politics", risk_score: 1, risk_rationale: "Mortality is verifiable from public record; resolution is unambiguous.", summary: "Bet YES on Biden surviving the calendar year, paying ~8.7% absolute (14.4% APR).", volume: 184502.10, liquidity: 18400 },
+  { question: "Will Bitcoin still exist on January 1, 2027?", slug: "bitcoin-exists-2027", side: "YES", price: 0.985, absolute_payoff_pct: 1.5, yield_apr: 0.024, days_to_resolution: 223, duration_bucket: "91–365d", end_date: "2027-01-01", primary_tag: "Crypto", risk_score: 2, risk_rationale: "‘Existence’ is loosely defined — interpreted here as a live mainnet producing blocks, which is publicly observable.", summary: "Bet YES on Bitcoin still producing blocks at year-end, a thin 1.5% (2.4% APR).", volume: 9821.40, liquidity: 4100 },
+  { question: "Will the Sun rise on July 4, 2026?", slug: "sun-rises-jul-4-2026", side: "YES", price: 0.97, absolute_payoff_pct: 3.1, yield_apr: 0.268, days_to_resolution: 42, duration_bucket: "≤90d", end_date: "2026-07-04", primary_tag: "Science", risk_score: 1, risk_rationale: "Astronomical certainty; resolution by any reputable almanac.", summary: "Bet YES on the Sun rising — 3.1% absolute, 26.8% APR thanks to a six-week tenor.", volume: 4502.50, liquidity: 980 },
+  { question: "Will the 2028 Summer Olympics open in Los Angeles?", slug: "olympics-la-2028", side: "YES", price: 0.91, absolute_payoff_pct: 9.9, yield_apr: 0.045, days_to_resolution: 800, duration_bucket: "366–730d", end_date: "2028-07-14", primary_tag: "Sports", risk_score: 2, risk_rationale: "Host city is contractually obligated; only a major geopolitical event could displace it. Resolution criterion is the IOC opening ceremony.", summary: "Bet YES on LA hosting — 9.9% absolute, but only 4.5% APR over the long tenor.", volume: 22045.00, liquidity: 6200 },
+  { question: "Will Taylor Swift release a new studio album in 2026?", slug: "swift-new-album-2026", side: "YES", price: 0.88, absolute_payoff_pct: 13.6, yield_apr: 0.224, days_to_resolution: 222, duration_bucket: "91–365d", end_date: "2026-12-31", primary_tag: "Culture", risk_score: 3, risk_rationale: "Definition of ‘studio album’ vs. re-record or EP could be contested. Polymarket UMA resolution has handled similar cases inconsistently.", summary: "Bet YES on a new Swift studio album, paying 13.6% absolute (22.4% APR) — risk is in the definition.", volume: 67120.00, liquidity: 9300 },
+  { question: "Will Vladimir Putin still be President of Russia on January 1, 2027?", slug: "putin-president-2027", side: "YES", price: 0.93, absolute_payoff_pct: 7.5, yield_apr: 0.124, days_to_resolution: 223, duration_bucket: "91–365d", end_date: "2027-01-01", primary_tag: "Politics", risk_score: 2, risk_rationale: "Office-holding is publicly observable, though edge cases (incapacitation, ‘acting’ titles) could complicate resolution.", summary: "Bet YES on Putin remaining in office through year-end, ~7.5% absolute (12.4% APR).", volume: 145002.00, liquidity: 12000 },
+  { question: "Will the Federal Reserve cut rates at the September 2026 meeting?", slug: "fed-cut-sept-2026", side: "NO", price: 0.89, absolute_payoff_pct: 12.4, yield_apr: 0.241, days_to_resolution: 110, duration_bucket: "91–365d", end_date: "2026-09-16", primary_tag: "Economics", risk_score: 1, risk_rationale: "FOMC statement is a definitive public record on a known date.", summary: "Bet NO on a September cut — 12.4% absolute (24.1% APR) on a four-month tenor.", volume: 88400.00, liquidity: 14500 },
+  { question: "Will Ethereum reach a new all-time high in 2026?", slug: "eth-ath-2026", side: "NO", price: 0.86, absolute_payoff_pct: 16.3, yield_apr: 0.268, days_to_resolution: 222, duration_bucket: "91–365d", end_date: "2026-12-31", primary_tag: "Crypto", risk_score: 2, risk_rationale: "ATH is well-defined by closing price on Coingecko/Coinbase, though intraday vs. close could matter at the margin.", summary: "Bet NO on a 2026 ETH ATH, paying 16.3% absolute (26.8% APR).", volume: 52800.00, liquidity: 8700 },
+  { question: "Will Manchester City win the 2026–27 Premier League title?", slug: "man-city-pl-2026-27", side: "NO", price: 0.78, absolute_payoff_pct: 28.2, yield_apr: 0.265, days_to_resolution: 388, duration_bucket: "366–730d", end_date: "2027-05-23", primary_tag: "Sports", risk_score: 1, risk_rationale: "League table at season end is an unambiguous public record.", summary: "Bet NO on City repeating, 28.2% absolute (26.5% APR) — generous premium for a coin-flip outcome.", volume: 31200.00, liquidity: 5400 },
+  { question: "Will SpaceX successfully land humans on Mars by end of 2026?", slug: "spacex-mars-humans-2026", side: "NO", price: 0.995, absolute_payoff_pct: 0.5, yield_apr: 0.008, days_to_resolution: 222, duration_bucket: "91–365d", end_date: "2026-12-31", primary_tag: "Science", risk_score: 1, risk_rationale: "A crewed Mars landing is a unique, public, verifiable event with broad press coverage.", summary: "Bet NO on a 2026 crewed Mars landing — almost nothing (0.5% absolute, 0.8% APR) but extremely clean.", volume: 5102.00, liquidity: 1200 },
+  { question: "Will OpenAI release a model named ‘GPT-6’ by end of 2026?", slug: "openai-gpt6-2026", side: "NO", price: 0.83, absolute_payoff_pct: 20.5, yield_apr: 0.337, days_to_resolution: 222, duration_bucket: "91–365d", end_date: "2026-12-31", primary_tag: "Technology", risk_score: 4, risk_rationale: "Hinges on naming convention. OpenAI could release something equivalent under a different name — resolution criteria around branding can be contested.", summary: "Bet NO on a literal ‘GPT-6’ release, 20.5% absolute (33.7% APR) — but read the naming rules carefully.", volume: 19850.00, liquidity: 3600 },
+  { question: "Will Donald Trump complete his second term in office?", slug: "trump-completes-term", side: "YES", price: 0.84, absolute_payoff_pct: 19.0, yield_apr: 0.073, days_to_resolution: 970, duration_bucket: "366–730d", end_date: "2029-01-20", primary_tag: "Politics", risk_score: 2, risk_rationale: "‘Complete the term’ is defined by reaching inauguration day of successor. Edge cases around resignation vs. removal are spelled out in market rules.", summary: "Bet YES on Trump finishing his term, 19% absolute (7.3% APR over ~2.7 years).", volume: 412800.00, liquidity: 28000 }
+];
+
+const state = {
+  sortKey: "yield_apr",
+  sortDir: "desc",
+  duration: "all",
+  tag: "all",
+  query: "",
+  open: new Set()
+};
+
+const fmt = {
+  payoff: x => x.toFixed(1) + "%",
+  price: x => "$" + x.toFixed(3),
+  money: x => "$" + Math.round(x).toLocaleString(),
+  date: iso => {
+    const d = new Date(iso + "T00:00:00Z");
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+  }
+};
+
+/* Safe DOM builders */
+function el(tag, attrs, text) {
+  const node = document.createElement(tag);
+  if (attrs) {
+    for (const k in attrs) {
+      if (k === "class") node.className = attrs[k];
+      else if (k === "dataset") {
+        for (const dk in attrs[k]) node.dataset[dk] = attrs[k][dk];
+      } else node.setAttribute(k, attrs[k]);
+    }
+  }
+  if (text !== undefined && text !== null) node.textContent = String(text);
+  return node;
+}
+
+function riskDots(score) {
+  const wrap = el("span", { class: "risk-dots", title: "Resolution risk " + score + "/5" });
+  for (let i = 1; i <= 5; i++) {
+    const cls = "risk-dot" + (i <= score ? " on r" + score : "");
+    wrap.appendChild(el("span", { class: cls }));
+  }
+  return wrap;
+}
+
+function yieldCell(apr) {
+  const v = (apr * 100).toFixed(1);
+  const parts = v.split(".");
+  const wrap = el("span", { class: "yield-val" });
+  wrap.appendChild(document.createTextNode(parts[0]));
+  const pct = el("span", { class: "pct" }, "." + parts[1] + "%");
+  wrap.appendChild(pct);
+  return wrap;
+}
+
+function applyFilters() {
+  let rows = DATA.filter(r => {
+    if (state.duration !== "all" && r.duration_bucket !== state.duration) return false;
+    if (state.tag !== "all" && r.primary_tag !== state.tag) return false;
+    if (state.query) {
+      const q = state.query.toLowerCase();
+      const hay = (r.question + " " + r.primary_tag + " " + r.summary).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  rows.sort((a, b) => {
+    const ka = a[state.sortKey], kb = b[state.sortKey];
+    let cmp;
+    if (typeof ka === "number") cmp = ka - kb;
+    else cmp = String(ka).localeCompare(String(kb));
+    return state.sortDir === "asc" ? cmp : -cmp;
+  });
+  return rows;
+}
+
+function renderRow(r, i) {
+  const open = state.open.has(r.slug);
+  const tr = el("tr", { class: "market" + (open ? " open" : ""), dataset: { slug: r.slug } });
+  tr.style.animationDelay = (i * 20) + "ms";
+
+  tr.appendChild(el("td", { class: "idx" }, String(i + 1).padStart(2, "0")));
+
+  const qTd = el("td", { class: "q" });
+  qTd.appendChild(el("div", { class: "question" }, r.question));
+  const meta = el("div", { class: "meta" });
+  meta.appendChild(el("span", { class: "tag" }, r.primary_tag));
+  meta.appendChild(el("span", { class: "dot" }, "·"));
+  meta.appendChild(el("span", null, r.duration_bucket));
+  meta.appendChild(el("span", { class: "dot" }, "·"));
+  meta.appendChild(el("span", null, "Liq " + fmt.money(r.liquidity)));
+  meta.appendChild(el("span", { class: "dot" }, "·"));
+  meta.appendChild(el("span", null, "Vol " + fmt.money(r.volume)));
+  qTd.appendChild(meta);
+  tr.appendChild(qTd);
+
+  const sideTd = el("td", { class: "hide-sm" });
+  sideTd.appendChild(el("span", { class: "side " + r.side }, r.side));
+  tr.appendChild(sideTd);
+
+  const priceTd = el("td", { class: "num price hide-sm" });
+  priceTd.appendChild(el("span", { class: "price-val" }, fmt.price(r.price)));
+  tr.appendChild(priceTd);
+
+  const payoffTd = el("td", { class: "num payoff hide-md" });
+  payoffTd.appendChild(el("span", { class: "payoff-val" }, fmt.payoff(r.absolute_payoff_pct)));
+  tr.appendChild(payoffTd);
+
+  const yTd = el("td", { class: "yield" });
+  yTd.appendChild(yieldCell(r.yield_apr));
+  tr.appendChild(yTd);
+
+  const daysTd = el("td", { class: "days" });
+  daysTd.appendChild(el("span", { class: "days-num" }, r.days_to_resolution + "d"));
+  daysTd.appendChild(el("span", { class: "end-date" }, fmt.date(r.end_date)));
+  tr.appendChild(daysTd);
+
+  const riskTd = el("td", { class: "risk hide-sm" });
+  riskTd.appendChild(riskDots(r.risk_score));
+  tr.appendChild(riskTd);
+
+  tr.appendChild(el("td", { class: "expand" }, open ? "−" : "+"));
+
+  return tr;
+}
+
+function renderDetailRow(r) {
+  const tr = el("tr", { class: "detail open" });
+  const td = el("td", { colspan: "9" });
+  const inner = el("div", { class: "detail-inner" });
+
+  const summary = el("div", { class: "detail-block summary" });
+  summary.appendChild(el("div", { class: "detail-label" }, "The Take"));
+  summary.appendChild(el("div", { class: "detail-text" }, r.summary));
+  inner.appendChild(summary);
+
+  const risk = el("div", { class: "detail-block" });
+  risk.appendChild(el("div", { class: "detail-label" }, "Resolution Risk · " + r.risk_score + "/5"));
+  risk.appendChild(el("div", { class: "detail-text" }, r.risk_rationale));
+  inner.appendChild(risk);
+
+  const cta = el("div", { class: "detail-cta" });
+  const a = el("a", { class: "market-link", href: "https://polymarket.com/event/" + r.slug, target: "_blank", rel: "noopener" }, "Open on Polymarket");
+  cta.appendChild(a);
+  cta.appendChild(el("span", { class: "slug" }, "/" + r.slug));
+  inner.appendChild(cta);
+
+  td.appendChild(inner);
+  tr.appendChild(td);
+  return tr;
+}
+
+function render() {
+  const rows = applyFilters();
+  const tbody = document.getElementById("tbody");
+  while (tbody.firstChild) tbody.removeChild(tbody.firstChild);
+
+  rows.forEach((r, i) => {
+    tbody.appendChild(renderRow(r, i));
+    if (state.open.has(r.slug)) tbody.appendChild(renderDetailRow(r));
+  });
+
+  document.getElementById("visible-count").textContent = String(rows.length);
+  document.getElementById("total-count").textContent = String(DATA.length);
+
+  document.querySelectorAll("thead th[data-key]").forEach(th => {
+    const isSorted = th.dataset.key === state.sortKey;
+    th.classList.toggle("sorted", isSorted);
+    const existing = th.querySelector(".arrow");
+    if (existing) existing.remove();
+    if (isSorted) {
+      const span = el("span", { class: "arrow" }, state.sortDir === "desc" ? "▼" : "▲");
+      th.appendChild(span);
+    }
+  });
+}
+
+function init() {
+  const tags = Array.from(new Set(DATA.map(r => r.primary_tag))).sort();
+  const sel = document.getElementById("tag-select");
+  tags.forEach(t => {
+    const opt = el("option", { value: t }, t);
+    sel.appendChild(opt);
+  });
+
+  document.querySelectorAll("#duration-chips .chip").forEach(c => {
+    c.addEventListener("click", () => {
+      document.querySelectorAll("#duration-chips .chip").forEach(x => x.classList.remove("active"));
+      c.classList.add("active");
+      state.duration = c.dataset.duration;
+      render();
+    });
+  });
+  sel.addEventListener("change", e => { state.tag = e.target.value; render(); });
+  document.getElementById("search").addEventListener("input", e => { state.query = e.target.value; render(); });
+
+  document.querySelectorAll("thead th[data-key]").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.key;
+      if (state.sortKey === key) {
+        state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+      } else {
+        state.sortKey = key;
+        const sample = DATA[0][key];
+        state.sortDir = typeof sample === "number" ? "desc" : "asc";
+      }
+      render();
+    });
+  });
+
+  document.getElementById("tbody").addEventListener("click", e => {
+    const tr = e.target.closest("tr.market");
+    if (!tr) return;
+    const slug = tr.dataset.slug;
+    if (state.open.has(slug)) state.open.delete(slug);
+    else state.open.add(slug);
+    render();
+  });
+
+  const aprs = DATA.map(d => d.yield_apr).sort((a,b) => a - b);
+  const mid = aprs.length % 2
+    ? aprs[(aprs.length - 1) / 2]
+    : (aprs[aprs.length/2 - 1] + aprs[aprs.length/2]) / 2;
+  document.getElementById("stat-count").textContent = String(DATA.length);
+
+  const medianEl = document.getElementById("stat-median");
+  while (medianEl.firstChild) medianEl.removeChild(medianEl.firstChild);
+  medianEl.appendChild(document.createTextNode((mid * 100).toFixed(1)));
+  medianEl.appendChild(el("small", null, "%"));
+
+  const topVal = Math.max.apply(null, DATA.map(d => d.yield_apr));
+  const topEl = document.getElementById("stat-top");
+  while (topEl.firstChild) topEl.removeChild(topEl.firstChild);
+  topEl.appendChild(document.createTextNode((topVal * 100).toFixed(1)));
+  topEl.appendChild(el("small", null, "%"));
+
+  render();
+}
+
+init();
+</script>
+</body>
+</html>
