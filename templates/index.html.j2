@@ -720,7 +720,9 @@ const fmt = {
   price: x => "$" + x.toFixed(3),
   money: x => "$" + Math.round(x).toLocaleString(),
   date: iso => {
-    const d = new Date(iso + "T00:00:00Z");
+    if (!iso) return "—";
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return "—";
     return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
   }
 };
