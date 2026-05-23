@@ -9,6 +9,7 @@ from typing import Any
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS markets (
     id              TEXT PRIMARY KEY,
+    platform        TEXT NOT NULL DEFAULT 'polymarket',
     slug            TEXT NOT NULL,
     question        TEXT NOT NULL,
     tags_json       TEXT,
@@ -93,11 +94,12 @@ def upsert_market(
     conn.execute(
         """
         INSERT INTO markets (
-            id, slug, question, tags_json, primary_tag, end_date,
+            id, platform, slug, question, tags_json, primary_tag, end_date,
             outcomes_json, yes_price, no_price, volume, liquidity,
             description, raw_json, fetched_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(id) DO UPDATE SET
+            platform=excluded.platform,
             slug=excluded.slug,
             question=excluded.question,
             tags_json=excluded.tags_json,
@@ -114,6 +116,7 @@ def upsert_market(
         """,
         (
             market["id"],
+            market.get("platform", "polymarket"),
             market.get("slug", ""),
             market.get("question", ""),
             json.dumps(tags),

@@ -15,7 +15,8 @@ def tmp_db(tmp_path: Path) -> Path:
 def sample_market() -> dict:
     """A representative Gamma API market payload."""
     return {
-        "id": "0x123",
+        "id": "polymarket:0x123",
+        "platform": "polymarket",
         "slug": "jesus-resurrection-2026",
         "question": "Will Jesus Christ be resurrected by Dec 31, 2026?",
         "tags": [{"label": "Religion"}, {"label": "Long Shot"}],

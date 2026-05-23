@@ -1,50 +1,24 @@
-"""Polymarket Gamma API client."""
+"""Multi-source market fetcher.
+
+This module is intentionally thin: real per-source logic lives under
+``scout.sources``. The orchestrator simply concatenates results from every
+configured adapter and writes them via :func:`store_markets`.
+"""
 from __future__ import annotations
 
 import sqlite3
 
-import httpx
-
 from scout.db import upsert_market
+from scout.sources.kalshi import fetch_kalshi
+from scout.sources.polymarket import fetch_polymarket
 
-GAMMA_URL = "https://gamma-api.polymarket.com/markets"
 
-
-def fetch_markets(
-    client: httpx.Client | None = None,
-    page_size: int = 500,
-) -> list[dict]:
-    """Fetch all active, open markets from Polymarket Gamma API.
-
-    Paginates via offset until the API returns an empty page.
-    """
-    own_client = client is None
-    if client is None:
-        client = httpx.Client(timeout=30.0)
-
-    try:
-        all_markets: list[dict] = []
-        offset = 0
-        while True:
-            response = client.get(
-                GAMMA_URL,
-                params={
-                    "active": "true",
-                    "closed": "false",
-                    "limit": page_size,
-                    "offset": offset,
-                },
-            )
-            response.raise_for_status()
-            page = response.json()
-            if not page:
-                break
-            all_markets.extend(page)
-            offset += page_size
-        return all_markets
-    finally:
-        if own_client:
-            client.close()
+def fetch_all_sources() -> list[dict]:
+    """Fetch from every configured source. Returns combined normalized markets."""
+    out: list[dict] = []
+    out.extend(fetch_polymarket())
+    out.extend(fetch_kalshi())
+    return out
 
 
 def store_markets(

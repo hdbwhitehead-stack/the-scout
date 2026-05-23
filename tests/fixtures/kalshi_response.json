@@ -1,0 +1,23 @@
+{
+  "markets": [
+    {
+      "ticker": "KXFED-24DEC-RAISE",
+      "event_ticker": "KXFED-24DEC",
+      "title": "Will the Fed raise rates at the December 2024 meeting?",
+      "subtitle": "",
+      "yes_bid": 4,
+      "yes_ask": 6,
+      "no_bid": 94,
+      "no_ask": 96,
+      "last_price": 5,
+      "volume": 1234500,
+      "open_interest": 45000000,
+      "close_time": "2024-12-18T19:00:00Z",
+      "expected_expiration_time": "2024-12-18T19:00:00Z",
+      "category": "Economics",
+      "rules_primary": "Resolves YES if the federal funds rate target is raised at the December 2024 FOMC meeting.",
+      "rules_secondary": ""
+    }
+  ],
+  "cursor": ""
+}

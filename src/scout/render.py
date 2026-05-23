@@ -40,8 +40,8 @@ def collect_rows(
     placeholders = ",".join("?" * len(ids))
 
     cur = conn.execute(
-        f"SELECT id, question, slug, primary_tag, end_date, volume, liquidity "
-        f"FROM markets WHERE id IN ({placeholders})",
+        f"SELECT id, platform, question, slug, primary_tag, end_date, "
+        f"volume, liquidity FROM markets WHERE id IN ({placeholders})",
         ids,
     )
     markets = {row["id"]: dict(row) for row in cur.fetchall()}
@@ -69,6 +69,7 @@ def collect_rows(
                 "summary": j.get("summary"),
                 "question": m.get("question", ""),
                 "slug": m.get("slug", ""),
+                "platform": m.get("platform"),
                 "primary_tag": m.get("primary_tag"),
                 "end_date": m.get("end_date"),
                 "volume": m.get("volume"),

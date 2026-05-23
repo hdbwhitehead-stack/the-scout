@@ -17,7 +17,7 @@ from scout.db import (
     init_schema,
     start_run,
 )
-from scout.fetch import fetch_markets, store_markets
+from scout.fetch import fetch_all_sources, store_markets
 from scout.judge import (
     judge_candidate,
     store_judgment,
@@ -66,9 +66,9 @@ def _all_candidates(conn: sqlite3.Connection, cfg: Config, today: date) -> list[
 def fetch(
     db_path: Path = typer.Option(DEFAULT_DB, "--db"),
 ) -> None:
-    """Pull latest markets from Polymarket Gamma API."""
+    """Pull latest markets from every configured source (Polymarket, Kalshi)."""
     conn = _open(db_path)
-    markets = fetch_markets()
+    markets = fetch_all_sources()
     n = store_markets(conn, markets, fetched_at=_now_iso())
     console.print(f"Fetched and stored {n} markets.")
 
@@ -140,7 +140,7 @@ def run(
     cfg = _load(config_path)
     run_id = start_run(conn, started_at=_now_iso())
 
-    markets = fetch_markets()
+    markets = fetch_all_sources()
     n_fetched = store_markets(conn, markets, fetched_at=_now_iso())
     console.print(f"fetch: {n_fetched} markets")
 
