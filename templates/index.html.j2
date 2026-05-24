@@ -705,6 +705,10 @@
         <p>The risk score (1&ndash;5) is an LLM judge&rsquo;s read on the <em>resolution criterion</em>, not the market. A 5 means the question is ambiguous, depends on subjective adjudication, or could plausibly never resolve. A 1 means a clean, oracle-friendly question with a public-record answer. The score says nothing about whether the favored side will actually win.</p>
       </details>
       <details class="method">
+        <summary>The risk-based probability adjustment</summary>
+        <p>Resolution-risk haircut: subjective P(win) is reduced before computing edge &mdash; 0pp for risk_score 1&ndash;2, 5pp for risk 3, 10pp for risk 4, 20pp for risk 5. This is an explicit policy adjustment, not the LLM&rsquo;s view. The LLM&rsquo;s raw estimate is shown in the detail row alongside the adjusted figure used for sizing.</p>
+      </details>
+      <details class="method">
         <summary>How the Size column is computed</summary>
         <p>Suggested size is <code>min(0.25 &times; Kelly, 1% of bankroll)</code>. Full Kelly on these bets is brutal &mdash; loss-on-wrong is often 15&ndash;20&times; win-on-right &mdash; so quarter-Kelly is the prudent floor and a hard 1% cap prevents any single resolution from being more than a 1% drawdown event. Position sizing is the difference between picking up pennies and being run over by the steamroller.</p>
       </details>
@@ -919,13 +923,21 @@ function renderDetailRow(r) {
 
   const metrics = el("div", { class: "detail-metrics" });
 
-  const pWinM = el("div", { class: "metric" }, "Subjective P(win)");
-  if (r.subjective_p_win === null || r.subjective_p_win === undefined) {
+  const pWinM = el("div", { class: "metric" }, "Adjusted P(win)");
+  if (r.adjusted_p_win === null || r.adjusted_p_win === undefined) {
     pWinM.appendChild(el("strong", null, "—"));
   } else {
-    pWinM.appendChild(el("strong", null, (r.subjective_p_win * 100).toFixed(1) + "%"));
+    pWinM.appendChild(el("strong", null, (r.adjusted_p_win * 100).toFixed(1) + "%"));
   }
   metrics.appendChild(pWinM);
+
+  const pRawM = el("div", { class: "metric" }, "LLM raw P(win)");
+  if (r.subjective_p_win === null || r.subjective_p_win === undefined) {
+    pRawM.appendChild(el("strong", null, "—"));
+  } else {
+    pRawM.appendChild(el("strong", null, (r.subjective_p_win * 100).toFixed(1) + "%"));
+  }
+  metrics.appendChild(pRawM);
 
   const edgeM = el("div", { class: "metric" }, "Edge");
   if (r.edge_pct === null || r.edge_pct === undefined) {

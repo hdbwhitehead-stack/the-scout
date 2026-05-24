@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T02:41:59.825670+00:00",
+  "generated_at": "2026-05-24T02:51:38.647228+00:00",
   "rows": [
     {
       "market_id": "polymarket:1301524",
@@ -20,6 +20,7 @@
       "liquidity": 1528.1326,
       "absolute_payoff_pct": 14.500000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -43,6 +44,7 @@
       "liquidity": 1657.10035,
       "absolute_payoff_pct": 12.849999999999994,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -66,6 +68,7 @@
       "liquidity": 7484.4647,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -89,6 +92,7 @@
       "liquidity": 8623.0346,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -112,6 +116,7 @@
       "liquidity": 11757.6891,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -135,6 +140,7 @@
       "liquidity": 2276.4487,
       "absolute_payoff_pct": 3.749999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -158,6 +164,7 @@
       "liquidity": 1679.7811,
       "absolute_payoff_pct": 3.400000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -181,6 +188,7 @@
       "liquidity": 5929.197,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -204,6 +212,7 @@
       "liquidity": 169.52902,
       "absolute_payoff_pct": 6.699999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -227,6 +236,7 @@
       "liquidity": 14112.5303,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -250,6 +260,7 @@
       "liquidity": 7007.471,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -273,6 +284,7 @@
       "liquidity": 15924.0037,
       "absolute_payoff_pct": 13.200000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -296,6 +308,7 @@
       "liquidity": 13113.2539,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -319,6 +332,7 @@
       "liquidity": 9621.7072,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -342,6 +356,7 @@
       "liquidity": 4772.005,
       "absolute_payoff_pct": 10.999999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -365,6 +380,7 @@
       "liquidity": 15920.27781,
       "absolute_payoff_pct": 6.8500000000000005,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -388,6 +404,7 @@
       "liquidity": 3746.45,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -411,6 +428,7 @@
       "liquidity": 16730.77028,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -434,6 +452,7 @@
       "liquidity": 8134.05019,
       "absolute_payoff_pct": 2.2499999999999964,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -457,6 +476,7 @@
       "liquidity": 15070.02394,
       "absolute_payoff_pct": 9.950000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -480,6 +500,7 @@
       "liquidity": 3895.96502,
       "absolute_payoff_pct": 4.449999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -503,6 +524,7 @@
       "liquidity": 6752.2,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -526,6 +548,7 @@
       "liquidity": 18755.77301,
       "absolute_payoff_pct": 3.500000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -549,6 +572,7 @@
       "liquidity": 267.354,
       "absolute_payoff_pct": 13.0,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -572,6 +596,7 @@
       "liquidity": 2569.04365,
       "absolute_payoff_pct": 4.800000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -595,6 +620,7 @@
       "liquidity": 2959.71572,
       "absolute_payoff_pct": 1.6000000000000014,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -618,6 +644,7 @@
       "liquidity": 16996.99529,
       "absolute_payoff_pct": 7.950000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -641,6 +668,7 @@
       "liquidity": 13435.5648,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -664,6 +692,7 @@
       "liquidity": 20917.2272,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -687,6 +716,7 @@
       "liquidity": 19296.53679,
       "absolute_payoff_pct": 2.8000000000000025,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -710,6 +740,7 @@
       "liquidity": 3426.9147,
       "absolute_payoff_pct": 15.000000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -733,6 +764,7 @@
       "liquidity": 3142.10565,
       "absolute_payoff_pct": 14.949999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -756,6 +788,7 @@
       "liquidity": 10163.67206,
       "absolute_payoff_pct": 3.5499999999999976,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -779,6 +812,7 @@
       "liquidity": 34977.7055,
       "absolute_payoff_pct": 6.25,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -802,6 +836,7 @@
       "liquidity": 2362.3297,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -825,6 +860,7 @@
       "liquidity": 13066.69449,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -848,6 +884,7 @@
       "liquidity": 2650.74999,
       "absolute_payoff_pct": 13.749999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -871,6 +908,7 @@
       "liquidity": 65047.5846,
       "absolute_payoff_pct": 13.5,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -894,6 +932,7 @@
       "liquidity": 5413.791,
       "absolute_payoff_pct": 13.5,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -917,6 +956,7 @@
       "liquidity": 1606.7599,
       "absolute_payoff_pct": 13.5,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -940,6 +980,7 @@
       "liquidity": 11489.9455,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -963,6 +1004,7 @@
       "liquidity": 2505.36934,
       "absolute_payoff_pct": 1.100000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -986,6 +1028,7 @@
       "liquidity": 2778.9951,
       "absolute_payoff_pct": 1.4499999999999957,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1009,6 +1052,7 @@
       "liquidity": 2229.30246,
       "absolute_payoff_pct": 11.2,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1032,6 +1076,7 @@
       "liquidity": 975.01205,
       "absolute_payoff_pct": 11.150000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1055,6 +1100,7 @@
       "liquidity": 1604.24748,
       "absolute_payoff_pct": 0.9000000000000008,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1078,6 +1124,7 @@
       "liquidity": 2293.08825,
       "absolute_payoff_pct": 9.850000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1101,6 +1148,7 @@
       "liquidity": 1104.15694,
       "absolute_payoff_pct": 2.5499999999999967,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1124,6 +1172,7 @@
       "liquidity": 3459.01315,
       "absolute_payoff_pct": 9.399999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1147,6 +1196,7 @@
       "liquidity": 1118.33128,
       "absolute_payoff_pct": 9.250000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1170,6 +1220,7 @@
       "liquidity": 641.5235,
       "absolute_payoff_pct": 9.050000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1193,6 +1244,7 @@
       "liquidity": 33521.5696,
       "absolute_payoff_pct": 8.999999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1216,6 +1268,7 @@
       "liquidity": 85350.1421,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1239,6 +1292,7 @@
       "liquidity": 2668.25988,
       "absolute_payoff_pct": 0.7499999999999951,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1262,6 +1316,7 @@
       "liquidity": 2842.06254,
       "absolute_payoff_pct": 0.7499999999999951,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1285,6 +1340,7 @@
       "liquidity": 3895.45344,
       "absolute_payoff_pct": 1.649999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1308,6 +1364,7 @@
       "liquidity": 22152.30833,
       "absolute_payoff_pct": 1.649999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1331,6 +1388,7 @@
       "liquidity": 843.8649,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1354,6 +1412,7 @@
       "liquidity": 1544.73656,
       "absolute_payoff_pct": 3.600000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1377,6 +1436,7 @@
       "liquidity": 25163.98463,
       "absolute_payoff_pct": 7.799999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1400,6 +1460,7 @@
       "liquidity": 1793.18761,
       "absolute_payoff_pct": 7.750000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1423,6 +1484,7 @@
       "liquidity": 10065.8201,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1446,6 +1508,7 @@
       "liquidity": 12962.87734,
       "absolute_payoff_pct": 3.2499999999999973,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1469,6 +1532,7 @@
       "liquidity": 1507754.66504,
       "absolute_payoff_pct": 11.250000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1492,6 +1556,7 @@
       "liquidity": 1441.0063,
       "absolute_payoff_pct": 7.399999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1515,6 +1580,7 @@
       "liquidity": 17335.32606,
       "absolute_payoff_pct": 7.199999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1538,6 +1604,7 @@
       "liquidity": 1461.38421,
       "absolute_payoff_pct": 7.099999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1561,6 +1628,7 @@
       "liquidity": 4332.6313,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1584,6 +1652,7 @@
       "liquidity": 2039.9265,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1607,6 +1676,7 @@
       "liquidity": 3931.36122,
       "absolute_payoff_pct": 0.6000000000000005,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1630,6 +1700,7 @@
       "liquidity": 12987.64665,
       "absolute_payoff_pct": 14.549999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1653,6 +1724,7 @@
       "liquidity": 866.03354,
       "absolute_payoff_pct": 3.049999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1676,6 +1748,7 @@
       "liquidity": 1955.43652,
       "absolute_payoff_pct": 6.699999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1699,6 +1772,7 @@
       "liquidity": 695.20018,
       "absolute_payoff_pct": 1.7000000000000015,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1722,6 +1796,7 @@
       "liquidity": 14857.53573,
       "absolute_payoff_pct": 6.399999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1745,6 +1820,7 @@
       "liquidity": 10425.40784,
       "absolute_payoff_pct": 5.249999999999999,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1768,6 +1844,7 @@
       "liquidity": 8814.65718,
       "absolute_payoff_pct": 1.4499999999999957,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1791,6 +1868,7 @@
       "liquidity": 1732.6441,
       "absolute_payoff_pct": 6.000000000000005,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1814,6 +1892,7 @@
       "liquidity": 1280141.75607,
       "absolute_payoff_pct": 8.850000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1837,6 +1916,7 @@
       "liquidity": 536295.43577,
       "absolute_payoff_pct": 8.750000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1860,6 +1940,7 @@
       "liquidity": 2244.47894,
       "absolute_payoff_pct": 5.85,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1883,6 +1964,7 @@
       "liquidity": 2994.85875,
       "absolute_payoff_pct": 0.5000000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1906,6 +1988,7 @@
       "liquidity": 13784.8955,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1929,6 +2012,7 @@
       "liquidity": 2291.0227,
       "absolute_payoff_pct": 5.75,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1952,6 +2036,7 @@
       "liquidity": 8917.98125,
       "absolute_payoff_pct": 1.3000000000000012,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1975,6 +2060,7 @@
       "liquidity": 13486.2398,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -1998,6 +2084,7 @@
       "liquidity": 1249024.18195,
       "absolute_payoff_pct": 8.250000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2021,6 +2108,7 @@
       "liquidity": 16968.7699,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2044,6 +2132,7 @@
       "liquidity": 2144.0208,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2067,6 +2156,7 @@
       "liquidity": 1730.2878,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2090,6 +2180,7 @@
       "liquidity": 17740.59537,
       "absolute_payoff_pct": 2.300000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2113,6 +2204,7 @@
       "liquidity": 3218.58297,
       "absolute_payoff_pct": 5.400000000000005,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2136,6 +2228,7 @@
       "liquidity": 5399.42299,
       "absolute_payoff_pct": 9.950000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2159,6 +2252,7 @@
       "liquidity": 11824.1579,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2182,6 +2276,7 @@
       "liquidity": 1041.1144,
       "absolute_payoff_pct": 13.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2205,6 +2300,7 @@
       "liquidity": 10833.30892,
       "absolute_payoff_pct": 11.099999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2228,6 +2324,7 @@
       "liquidity": 326.79,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2251,6 +2348,7 @@
       "liquidity": 147300.6448,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2274,6 +2372,7 @@
       "liquidity": 10567.48316,
       "absolute_payoff_pct": 1.2499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2297,6 +2396,7 @@
       "liquidity": 15153.02702,
       "absolute_payoff_pct": 1.2499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2320,6 +2420,7 @@
       "liquidity": 10742.55045,
       "absolute_payoff_pct": 1.100000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2343,6 +2444,7 @@
       "liquidity": 1558.2105,
       "absolute_payoff_pct": 15.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2366,6 +2468,7 @@
       "liquidity": 1791.9559,
       "absolute_payoff_pct": 15.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2389,6 +2492,7 @@
       "liquidity": 36187.4309,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2412,6 +2516,7 @@
       "liquidity": 3498.36403,
       "absolute_payoff_pct": 10.299999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2435,6 +2540,7 @@
       "liquidity": 110.51112,
       "absolute_payoff_pct": 3.3499999999999974,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2458,6 +2564,7 @@
       "liquidity": 1243.95428,
       "absolute_payoff_pct": 4.649999999999999,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2481,6 +2588,7 @@
       "liquidity": 1168.49174,
       "absolute_payoff_pct": 4.600000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2504,6 +2612,7 @@
       "liquidity": 1890.57413,
       "absolute_payoff_pct": 4.600000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2527,6 +2636,7 @@
       "liquidity": 17879.65637,
       "absolute_payoff_pct": 0.9000000000000008,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2550,6 +2660,7 @@
       "liquidity": 7049.3504,
       "absolute_payoff_pct": 3.949999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2573,6 +2684,7 @@
       "liquidity": 14076.739,
       "absolute_payoff_pct": 4.5000000000000036,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2596,6 +2708,7 @@
       "liquidity": 931.047,
       "absolute_payoff_pct": 10.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2619,6 +2732,7 @@
       "liquidity": 13485.32772,
       "absolute_payoff_pct": 0.7000000000000006,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2642,6 +2756,7 @@
       "liquidity": 16350.0278,
       "absolute_payoff_pct": 4.149999999999999,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2665,6 +2780,7 @@
       "liquidity": 1058.2916,
       "absolute_payoff_pct": 4.049999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2688,6 +2804,7 @@
       "liquidity": 1423.4326,
       "absolute_payoff_pct": 4.0000000000000036,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2711,6 +2828,7 @@
       "liquidity": 2621.2584,
       "absolute_payoff_pct": 4.0000000000000036,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2734,6 +2852,7 @@
       "liquidity": 1169.53755,
       "absolute_payoff_pct": 3.9000000000000035,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2757,6 +2876,7 @@
       "liquidity": 819.3732,
       "absolute_payoff_pct": 15.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2780,6 +2900,7 @@
       "liquidity": 1098.03036,
       "absolute_payoff_pct": 3.8000000000000034,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2803,6 +2924,7 @@
       "liquidity": 248.60018,
       "absolute_payoff_pct": 14.649999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2826,6 +2948,7 @@
       "liquidity": 285.36482,
       "absolute_payoff_pct": 9.450000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2849,6 +2972,7 @@
       "liquidity": 1318.4158,
       "absolute_payoff_pct": 3.7000000000000033,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2872,6 +2996,7 @@
       "liquidity": 4121.3615,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2895,6 +3020,7 @@
       "liquidity": 248452.75422,
       "absolute_payoff_pct": 3.600000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2918,6 +3044,7 @@
       "liquidity": 10613.00324,
       "absolute_payoff_pct": 6.75,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2941,6 +3068,7 @@
       "liquidity": 521.36981,
       "absolute_payoff_pct": 14.049999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2964,6 +3092,7 @@
       "liquidity": 717101.81061,
       "absolute_payoff_pct": 2.3499999999999965,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -2987,6 +3116,7 @@
       "liquidity": 1691.1419,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3010,6 +3140,7 @@
       "liquidity": 330.32212,
       "absolute_payoff_pct": 13.849999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3033,6 +3164,7 @@
       "liquidity": 9048.05469,
       "absolute_payoff_pct": 6.599999999999994,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3056,6 +3188,7 @@
       "liquidity": 2897.7066,
       "absolute_payoff_pct": 3.500000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3079,6 +3212,7 @@
       "liquidity": 55272.4543,
       "absolute_payoff_pct": 13.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3102,6 +3236,7 @@
       "liquidity": 4572.463,
       "absolute_payoff_pct": 10.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3125,6 +3260,7 @@
       "liquidity": 503.59386,
       "absolute_payoff_pct": 13.649999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3148,6 +3284,7 @@
       "liquidity": 1086.45054,
       "absolute_payoff_pct": 3.4499999999999975,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3171,6 +3308,7 @@
       "liquidity": 44237.56301,
       "absolute_payoff_pct": 7.650000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3194,6 +3332,7 @@
       "liquidity": 18109.51352,
       "absolute_payoff_pct": 2.1499999999999964,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3217,6 +3356,7 @@
       "liquidity": 1054000.96234,
       "absolute_payoff_pct": 5.149999999999999,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3240,6 +3380,7 @@
       "liquidity": 11527.55623,
       "absolute_payoff_pct": 0.8499999999999952,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3263,6 +3404,7 @@
       "liquidity": 2676.2749,
       "absolute_payoff_pct": 3.400000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3286,6 +3428,7 @@
       "liquidity": 1760.03334,
       "absolute_payoff_pct": 3.400000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3309,6 +3452,7 @@
       "liquidity": 272.47566,
       "absolute_payoff_pct": 13.3,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3332,6 +3476,7 @@
       "liquidity": 4450.8461,
       "absolute_payoff_pct": 2.100000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3355,6 +3500,7 @@
       "liquidity": 214.50681,
       "absolute_payoff_pct": 13.100000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3378,6 +3524,7 @@
       "liquidity": 2072.57751,
       "absolute_payoff_pct": 3.300000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3401,6 +3548,7 @@
       "liquidity": 10134.075,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3424,6 +3572,7 @@
       "liquidity": 1555.02655,
       "absolute_payoff_pct": 3.2499999999999973,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3447,6 +3596,7 @@
       "liquidity": 3924.47489,
       "absolute_payoff_pct": 0.8000000000000007,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3470,6 +3620,7 @@
       "liquidity": 2726.78136,
       "absolute_payoff_pct": 3.749999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3493,6 +3644,7 @@
       "liquidity": 3240.76485,
       "absolute_payoff_pct": 1.3000000000000012,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3516,6 +3668,7 @@
       "liquidity": 11329.5407,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3539,6 +3692,7 @@
       "liquidity": 15368.9136,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3562,6 +3716,7 @@
       "liquidity": 13031.1762,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3585,6 +3740,7 @@
       "liquidity": 1476.88733,
       "absolute_payoff_pct": 12.350000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3608,6 +3764,7 @@
       "liquidity": 2452.84359,
       "absolute_payoff_pct": 3.049999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3631,6 +3788,7 @@
       "liquidity": 1944.2446,
       "absolute_payoff_pct": 3.049999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3654,6 +3812,7 @@
       "liquidity": 10993.79347,
       "absolute_payoff_pct": 0.7499999999999951,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3677,6 +3836,7 @@
       "liquidity": 9491.1819,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3700,6 +3860,7 @@
       "liquidity": 1778.8716,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3723,6 +3884,7 @@
       "liquidity": 3103.77566,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3746,6 +3908,7 @@
       "liquidity": 39453.63947,
       "absolute_payoff_pct": 3.0000000000000027,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3769,6 +3932,7 @@
       "liquidity": 20907.54526,
       "absolute_payoff_pct": 9.899999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3792,6 +3956,7 @@
       "liquidity": 183848.62654,
       "absolute_payoff_pct": 1.1499999999999955,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3815,6 +3980,7 @@
       "liquidity": 6665.12303,
       "absolute_payoff_pct": 1.849999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3838,6 +4004,7 @@
       "liquidity": 2512.58247,
       "absolute_payoff_pct": 2.0499999999999963,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3861,6 +4028,7 @@
       "liquidity": 12467.8836,
       "absolute_payoff_pct": 15.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3884,6 +4052,7 @@
       "liquidity": 1246.447,
       "absolute_payoff_pct": 15.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3907,6 +4076,7 @@
       "liquidity": 4292.7536,
       "absolute_payoff_pct": 15.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3930,6 +4100,7 @@
       "liquidity": 16388.9709,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3953,6 +4124,7 @@
       "liquidity": 20525.60449,
       "absolute_payoff_pct": 2.849999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3976,6 +4148,7 @@
       "liquidity": 4579.92341,
       "absolute_payoff_pct": 5.35,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -3999,6 +4172,7 @@
       "liquidity": 795.83377,
       "absolute_payoff_pct": 11.399999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4022,6 +4196,7 @@
       "liquidity": 1767.3674,
       "absolute_payoff_pct": 8.999999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4045,6 +4220,7 @@
       "liquidity": 1230.01203,
       "absolute_payoff_pct": 2.8000000000000025,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4068,6 +4244,7 @@
       "liquidity": 1034.06739,
       "absolute_payoff_pct": 7.099999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4091,6 +4268,7 @@
       "liquidity": 12307.6361,
       "absolute_payoff_pct": 14.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4114,6 +4292,7 @@
       "liquidity": 24212.7432,
       "absolute_payoff_pct": 14.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4137,6 +4316,7 @@
       "liquidity": 13517.1669,
       "absolute_payoff_pct": 14.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4160,6 +4340,7 @@
       "liquidity": 6483.4219,
       "absolute_payoff_pct": 14.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4183,6 +4364,7 @@
       "liquidity": 64559.89815,
       "absolute_payoff_pct": 2.749999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4206,6 +4388,7 @@
       "liquidity": 2706.10998,
       "absolute_payoff_pct": 2.749999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4229,6 +4412,7 @@
       "liquidity": 1863.54282,
       "absolute_payoff_pct": 2.749999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4252,6 +4436,7 @@
       "liquidity": 599.3362,
       "absolute_payoff_pct": 14.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4275,6 +4460,7 @@
       "liquidity": 1727.4982,
       "absolute_payoff_pct": 14.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4298,6 +4484,7 @@
       "liquidity": 770.7084,
       "absolute_payoff_pct": 14.349999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4321,6 +4508,7 @@
       "liquidity": 3847.88378,
       "absolute_payoff_pct": 7.450000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4344,6 +4532,7 @@
       "liquidity": 1161.57914,
       "absolute_payoff_pct": 2.7000000000000024,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4367,6 +4556,7 @@
       "liquidity": 16588.9429,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4390,6 +4580,7 @@
       "liquidity": 11576.4289,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4413,6 +4604,7 @@
       "liquidity": 9391.4735,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4436,6 +4628,7 @@
       "liquidity": 10826.7496,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4459,6 +4652,7 @@
       "liquidity": 15643.3746,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4482,6 +4676,7 @@
       "liquidity": 26136.19693,
       "absolute_payoff_pct": 14.049999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4505,6 +4700,7 @@
       "liquidity": 2437.36693,
       "absolute_payoff_pct": 2.649999999999997,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4528,6 +4724,7 @@
       "liquidity": 12059.14192,
       "absolute_payoff_pct": 3.949999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4551,6 +4748,7 @@
       "liquidity": 1476.1102,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4574,6 +4772,7 @@
       "liquidity": 21481.5081,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4597,6 +4796,7 @@
       "liquidity": 11820.86927,
       "absolute_payoff_pct": 0.649999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4620,6 +4820,7 @@
       "liquidity": 27919.96276,
       "absolute_payoff_pct": 10.450000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4643,6 +4844,7 @@
       "liquidity": 16871.7931,
       "absolute_payoff_pct": 2.6000000000000023,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4666,6 +4868,7 @@
       "liquidity": 3506.98451,
       "absolute_payoff_pct": 2.6000000000000023,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4689,6 +4892,7 @@
       "liquidity": 34781.485,
       "absolute_payoff_pct": 2.6000000000000023,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4712,6 +4916,7 @@
       "liquidity": 10149.0233,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4735,6 +4940,7 @@
       "liquidity": 9698.4509,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4758,6 +4964,7 @@
       "liquidity": 11272.2147,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4781,6 +4988,7 @@
       "liquidity": 5547.82074,
       "absolute_payoff_pct": 13.600000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4804,6 +5012,7 @@
       "liquidity": 3109.9079,
       "absolute_payoff_pct": 2.5499999999999967,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4827,6 +5036,7 @@
       "liquidity": 14044.9459,
       "absolute_payoff_pct": 13.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4850,6 +5060,7 @@
       "liquidity": 9638.861,
       "absolute_payoff_pct": 13.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4873,6 +5084,7 @@
       "liquidity": 5335.8032,
       "absolute_payoff_pct": 13.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4896,6 +5108,7 @@
       "liquidity": 679.196,
       "absolute_payoff_pct": 13.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4919,6 +5132,7 @@
       "liquidity": 68280.2441,
       "absolute_payoff_pct": 13.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4942,6 +5156,7 @@
       "liquidity": 763.4,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4965,6 +5180,7 @@
       "liquidity": 4883.29096,
       "absolute_payoff_pct": 1.100000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -4988,6 +5204,7 @@
       "liquidity": 6227.01826,
       "absolute_payoff_pct": 1.100000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5011,6 +5228,7 @@
       "liquidity": 27145.14896,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5034,6 +5252,7 @@
       "liquidity": 2581.4272,
       "absolute_payoff_pct": 2.500000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5057,6 +5276,7 @@
       "liquidity": 22903.34861,
       "absolute_payoff_pct": 2.500000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5080,6 +5300,7 @@
       "liquidity": 1218.08954,
       "absolute_payoff_pct": 6.35,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5103,6 +5324,7 @@
       "liquidity": 13176.0598,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5126,6 +5348,7 @@
       "liquidity": 10357.4123,
       "absolute_payoff_pct": 13.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5149,6 +5372,7 @@
       "liquidity": 2562.2205,
       "absolute_payoff_pct": 13.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5172,6 +5396,7 @@
       "liquidity": 103.4556,
       "absolute_payoff_pct": 13.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5195,6 +5420,7 @@
       "liquidity": 116.73814,
       "absolute_payoff_pct": 14.249999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5218,6 +5444,7 @@
       "liquidity": 241.7749,
       "absolute_payoff_pct": 6.15,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5241,6 +5468,7 @@
       "liquidity": 209.9622,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5264,6 +5492,7 @@
       "liquidity": 11857.6977,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5287,6 +5516,7 @@
       "liquidity": 10588.39371,
       "absolute_payoff_pct": 2.3499999999999965,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5310,6 +5540,7 @@
       "liquidity": 1186.5081,
       "absolute_payoff_pct": 2.3499999999999965,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5333,6 +5564,7 @@
       "liquidity": 14397.48316,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5356,6 +5588,7 @@
       "liquidity": 3826.8494,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5379,6 +5612,7 @@
       "liquidity": 5727.0585,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5402,6 +5636,7 @@
       "liquidity": 3484.0118,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5425,6 +5660,7 @@
       "liquidity": 11895.0415,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5448,6 +5684,7 @@
       "liquidity": 12202.4512,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5471,6 +5708,7 @@
       "liquidity": 67973.53342,
       "absolute_payoff_pct": 9.350000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5494,6 +5732,7 @@
       "liquidity": 19902.6114,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5517,6 +5756,7 @@
       "liquidity": 27821.362,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5540,6 +5780,7 @@
       "liquidity": 11380.2482,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5563,6 +5804,7 @@
       "liquidity": 14768.7072,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5586,6 +5828,7 @@
       "liquidity": 15207.0911,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5609,6 +5852,7 @@
       "liquidity": 11097.8647,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5632,6 +5876,7 @@
       "liquidity": 12397.4973,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5655,6 +5900,7 @@
       "liquidity": 1162.17,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5678,6 +5924,7 @@
       "liquidity": 515.83883,
       "absolute_payoff_pct": 12.4,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5701,6 +5948,7 @@
       "liquidity": 4815.37789,
       "absolute_payoff_pct": 0.9499999999999953,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5724,6 +5972,7 @@
       "liquidity": 1700.80621,
       "absolute_payoff_pct": 12.250000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5747,6 +5996,7 @@
       "liquidity": 1667300.98971,
       "absolute_payoff_pct": 3.4499999999999975,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5770,6 +6020,7 @@
       "liquidity": 3045.73887,
       "absolute_payoff_pct": 12.2,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5793,6 +6044,7 @@
       "liquidity": 47801.46183,
       "absolute_payoff_pct": 12.150000000000006,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5816,6 +6068,7 @@
       "liquidity": 4461.69489,
       "absolute_payoff_pct": 2.2499999999999964,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5839,6 +6092,7 @@
       "liquidity": 244.015,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5862,6 +6116,7 @@
       "liquidity": 1326.4676,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5885,6 +6140,7 @@
       "liquidity": 156356.07022,
       "absolute_payoff_pct": 9.150000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5908,6 +6164,7 @@
       "liquidity": 3901.81139,
       "absolute_payoff_pct": 12.050000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5931,6 +6188,7 @@
       "liquidity": 14873.313,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5954,6 +6212,7 @@
       "liquidity": 9958.0538,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -5977,6 +6236,7 @@
       "liquidity": 1617.6032,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6000,6 +6260,7 @@
       "liquidity": 9061.0549,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6023,6 +6284,7 @@
       "liquidity": 11636.0484,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6046,6 +6308,7 @@
       "liquidity": 2381.26556,
       "absolute_payoff_pct": 2.200000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6069,6 +6332,7 @@
       "liquidity": 11057.5356,
       "absolute_payoff_pct": 8.999999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6092,6 +6356,7 @@
       "liquidity": 3695.14896,
       "absolute_payoff_pct": 0.9000000000000008,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6115,6 +6380,7 @@
       "liquidity": 13695.81662,
       "absolute_payoff_pct": 8.850000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6138,6 +6404,7 @@
       "liquidity": 86678.8439,
       "absolute_payoff_pct": 10.450000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6161,6 +6428,7 @@
       "liquidity": 7189.29949,
       "absolute_payoff_pct": 11.6,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6184,6 +6452,7 @@
       "liquidity": 2737.3891,
       "absolute_payoff_pct": 12.0,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6207,6 +6476,7 @@
       "liquidity": 10743.1246,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6230,6 +6500,7 @@
       "liquidity": 13540.7131,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6253,6 +6524,7 @@
       "liquidity": 5708.8648,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6276,6 +6548,7 @@
       "liquidity": 24891.1015,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6299,6 +6572,7 @@
       "liquidity": 1748.2629,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6322,6 +6596,7 @@
       "liquidity": 4527.3694,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6345,6 +6620,7 @@
       "liquidity": 19417.7045,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6368,6 +6644,7 @@
       "liquidity": 2841.0677,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6391,6 +6668,7 @@
       "liquidity": 7885.1462,
       "absolute_payoff_pct": 11.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6414,6 +6692,7 @@
       "liquidity": 29965.4072,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6437,6 +6716,7 @@
       "liquidity": 17096.9213,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6460,6 +6740,7 @@
       "liquidity": 1541.5939,
       "absolute_payoff_pct": 8.450000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6483,6 +6764,7 @@
       "liquidity": 21179.71861,
       "absolute_payoff_pct": 10.750000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6506,6 +6788,7 @@
       "liquidity": 20871.26362,
       "absolute_payoff_pct": 0.40000000000000036,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6529,6 +6812,7 @@
       "liquidity": 2850.99801,
       "absolute_payoff_pct": 0.8499999999999952,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6552,6 +6836,7 @@
       "liquidity": 10555.7842,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6575,6 +6860,7 @@
       "liquidity": 12389.8975,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6598,6 +6884,7 @@
       "liquidity": 12829.9812,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6621,6 +6908,7 @@
       "liquidity": 14652.6173,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6644,6 +6932,7 @@
       "liquidity": 11178.305,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6667,6 +6956,7 @@
       "liquidity": 14077.6597,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6690,6 +6980,7 @@
       "liquidity": 7631.6404,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6713,6 +7004,7 @@
       "liquidity": 12493.0984,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6736,6 +7028,7 @@
       "liquidity": 5900.58763,
       "absolute_payoff_pct": 0.9000000000000008,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6759,6 +7052,7 @@
       "liquidity": 3272.30472,
       "absolute_payoff_pct": 2.0499999999999963,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6782,6 +7076,7 @@
       "liquidity": 1165.10334,
       "absolute_payoff_pct": 2.0499999999999963,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6805,6 +7100,7 @@
       "liquidity": 1724.2629,
       "absolute_payoff_pct": 11.099999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6828,6 +7124,7 @@
       "liquidity": 2279.9634,
       "absolute_payoff_pct": 10.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6851,6 +7148,7 @@
       "liquidity": 34036.1251,
       "absolute_payoff_pct": 10.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6874,6 +7172,7 @@
       "liquidity": 13329.82794,
       "absolute_payoff_pct": 10.950000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6897,6 +7196,7 @@
       "liquidity": 456888.55624,
       "absolute_payoff_pct": 2.0499999999999963,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6920,6 +7220,7 @@
       "liquidity": 9882.6453,
       "absolute_payoff_pct": 10.750000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6943,6 +7244,7 @@
       "liquidity": 8162.69974,
       "absolute_payoff_pct": 10.750000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6966,6 +7268,7 @@
       "liquidity": 354.49568,
       "absolute_payoff_pct": 8.099999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -6989,6 +7292,7 @@
       "liquidity": 139.36977,
       "absolute_payoff_pct": 9.799999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7012,6 +7316,7 @@
       "liquidity": 23247.47067,
       "absolute_payoff_pct": 1.9499999999999962,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7035,6 +7340,7 @@
       "liquidity": 2166.74851,
       "absolute_payoff_pct": 8.450000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7058,6 +7364,7 @@
       "liquidity": 9190.77,
       "absolute_payoff_pct": 12.5,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7081,6 +7388,7 @@
       "liquidity": 615.765,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7104,6 +7412,7 @@
       "liquidity": 538.53,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7127,6 +7436,7 @@
       "liquidity": 12515.1101,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7150,6 +7460,7 @@
       "liquidity": 3331.89251,
       "absolute_payoff_pct": 4.349999999999998,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7173,6 +7484,7 @@
       "liquidity": 3432.1909,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7196,6 +7508,7 @@
       "liquidity": 995.1795,
       "absolute_payoff_pct": 10.499999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7219,6 +7532,7 @@
       "liquidity": 1655.09888,
       "absolute_payoff_pct": 10.450000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7242,6 +7556,7 @@
       "liquidity": 85499.17249,
       "absolute_payoff_pct": 1.2499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7265,6 +7580,7 @@
       "liquidity": 518.69391,
       "absolute_payoff_pct": 7.899999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7288,6 +7604,7 @@
       "liquidity": 26294.13173,
       "absolute_payoff_pct": 7.750000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7311,6 +7628,7 @@
       "liquidity": 211.75145,
       "absolute_payoff_pct": 4.900000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7334,6 +7652,7 @@
       "liquidity": 27982.71195,
       "absolute_payoff_pct": 1.849999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7357,6 +7676,7 @@
       "liquidity": 2314.1773,
       "absolute_payoff_pct": 1.849999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7380,6 +7700,7 @@
       "liquidity": 14077.83994,
       "absolute_payoff_pct": 1.849999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7403,6 +7724,7 @@
       "liquidity": 15165.50832,
       "absolute_payoff_pct": 7.650000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7426,6 +7748,7 @@
       "liquidity": 13782.1628,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7449,6 +7772,7 @@
       "liquidity": 5457.17883,
       "absolute_payoff_pct": 0.7499999999999951,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7472,6 +7796,7 @@
       "liquidity": 41116.4369,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7495,6 +7820,7 @@
       "liquidity": 4625.7771,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7518,6 +7844,7 @@
       "liquidity": 9860.8541,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7541,6 +7868,7 @@
       "liquidity": 10212.1574,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7564,6 +7892,7 @@
       "liquidity": 11619.56,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7587,6 +7916,7 @@
       "liquidity": 2763.559,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7610,6 +7940,7 @@
       "liquidity": 8685.4934,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7633,6 +7964,7 @@
       "liquidity": 12770.392,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7656,6 +7988,7 @@
       "liquidity": 1648.9723,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7679,6 +8012,7 @@
       "liquidity": 15401.9059,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7702,6 +8036,7 @@
       "liquidity": 759.3392,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7725,6 +8060,7 @@
       "liquidity": 770.2195,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7748,6 +8084,7 @@
       "liquidity": 216.0047,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7771,6 +8108,7 @@
       "liquidity": 37783.24044,
       "absolute_payoff_pct": 7.550000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7794,6 +8132,7 @@
       "liquidity": 2459.2442,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7817,6 +8156,7 @@
       "liquidity": 8469.0538,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7840,6 +8180,7 @@
       "liquidity": 114.421,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7863,6 +8204,7 @@
       "liquidity": 3285.93127,
       "absolute_payoff_pct": 9.950000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7886,6 +8228,7 @@
       "liquidity": 12693.6096,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7909,6 +8252,7 @@
       "liquidity": 14651.3162,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7932,6 +8276,7 @@
       "liquidity": 13393.5218,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7955,6 +8300,7 @@
       "liquidity": 16010.371,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -7978,6 +8324,7 @@
       "liquidity": 16769.1666,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8001,6 +8348,7 @@
       "liquidity": 16888.8312,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8024,6 +8372,7 @@
       "liquidity": 12639.20956,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8047,6 +8396,7 @@
       "liquidity": 10438.8747,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8070,6 +8420,7 @@
       "liquidity": 14691.3852,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8093,6 +8444,7 @@
       "liquidity": 18916.8058,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8116,6 +8468,7 @@
       "liquidity": 18779.9071,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8139,6 +8492,7 @@
       "liquidity": 13586.3182,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8162,6 +8516,7 @@
       "liquidity": 8218.6956,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8185,6 +8540,7 @@
       "liquidity": 14829.5122,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8208,6 +8564,7 @@
       "liquidity": 12845.6207,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8231,6 +8588,7 @@
       "liquidity": 10656.6685,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8254,6 +8612,7 @@
       "liquidity": 11463.4057,
       "absolute_payoff_pct": 9.899999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8277,6 +8636,7 @@
       "liquidity": 11957.0215,
       "absolute_payoff_pct": 1.8000000000000016,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8300,6 +8660,7 @@
       "liquidity": 20058.39537,
       "absolute_payoff_pct": 7.250000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8323,6 +8684,7 @@
       "liquidity": 3289.0752,
       "absolute_payoff_pct": 9.699999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8346,6 +8708,7 @@
       "liquidity": 821.5783,
       "absolute_payoff_pct": 9.850000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8369,6 +8732,7 @@
       "liquidity": 416.82044,
       "absolute_payoff_pct": 7.199999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8392,6 +8756,7 @@
       "liquidity": 530.97,
       "absolute_payoff_pct": 4.5000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8415,6 +8780,7 @@
       "liquidity": 9256.8921,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8438,6 +8804,7 @@
       "liquidity": 9524.4538,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8461,6 +8828,7 @@
       "liquidity": 321876.7198,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8484,6 +8852,7 @@
       "liquidity": 18898.4262,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8507,6 +8876,7 @@
       "liquidity": 10668.15253,
       "absolute_payoff_pct": 3.300000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8530,6 +8900,7 @@
       "liquidity": 1469.6187,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8553,6 +8924,7 @@
       "liquidity": 30859.5635,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8576,6 +8948,7 @@
       "liquidity": 464.6373,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8599,6 +8972,7 @@
       "liquidity": 666.89683,
       "absolute_payoff_pct": 4.449999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8622,6 +8996,7 @@
       "liquidity": 5680.0312,
       "absolute_payoff_pct": 0.7000000000000006,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8645,6 +9020,7 @@
       "liquidity": 11881.29199,
       "absolute_payoff_pct": 9.399999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8668,6 +9044,7 @@
       "liquidity": 6774.79895,
       "absolute_payoff_pct": 7.099999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8691,6 +9068,7 @@
       "liquidity": 3988.8113,
       "absolute_payoff_pct": 9.350000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8714,6 +9092,7 @@
       "liquidity": 11661.8403,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8737,6 +9116,7 @@
       "liquidity": 5774.9864,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8760,6 +9140,7 @@
       "liquidity": 23986.9287,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8783,6 +9164,7 @@
       "liquidity": 7151.66286,
       "absolute_payoff_pct": 1.0499999999999954,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8806,6 +9188,7 @@
       "liquidity": 346.16661,
       "absolute_payoff_pct": 7.350000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8829,6 +9212,7 @@
       "liquidity": 13940.7147,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8852,6 +9236,7 @@
       "liquidity": 1702.76879,
       "absolute_payoff_pct": 9.599999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8875,6 +9260,7 @@
       "liquidity": 6525.33134,
       "absolute_payoff_pct": 3.1499999999999972,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8898,6 +9284,7 @@
       "liquidity": 54762.6198,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8921,6 +9308,7 @@
       "liquidity": 232.4163,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8944,6 +9332,7 @@
       "liquidity": 225212.13889,
       "absolute_payoff_pct": 1.0499999999999954,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8967,6 +9356,7 @@
       "liquidity": 875.2527,
       "absolute_payoff_pct": 8.899999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -8990,6 +9380,7 @@
       "liquidity": 2977971.7721,
       "absolute_payoff_pct": 2.4499999999999966,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9013,6 +9404,7 @@
       "liquidity": 8570.25354,
       "absolute_payoff_pct": 0.34999999999999476,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9036,6 +9428,7 @@
       "liquidity": 10797.52978,
       "absolute_payoff_pct": 8.850000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9059,6 +9452,7 @@
       "liquidity": 17839.8269,
       "absolute_payoff_pct": 3.600000000000003,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9082,6 +9476,7 @@
       "liquidity": 7196.63677,
       "absolute_payoff_pct": 8.750000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9105,6 +9500,7 @@
       "liquidity": 28077.9385,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9128,6 +9524,7 @@
       "liquidity": 12320.00499,
       "absolute_payoff_pct": 6.550000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9151,6 +9548,7 @@
       "liquidity": 4086.399,
       "absolute_payoff_pct": 3.0000000000000027,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9174,6 +9572,7 @@
       "liquidity": 3118.90887,
       "absolute_payoff_pct": 3.0000000000000027,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9197,6 +9596,7 @@
       "liquidity": 14017.3412,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9220,6 +9620,7 @@
       "liquidity": 16258.5466,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9243,6 +9644,7 @@
       "liquidity": 15936.3727,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9266,6 +9668,7 @@
       "liquidity": 18612.5754,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9289,6 +9692,7 @@
       "liquidity": 16612.6399,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9312,6 +9716,7 @@
       "liquidity": 17454.3846,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9335,6 +9740,7 @@
       "liquidity": 17719.3753,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9358,6 +9764,7 @@
       "liquidity": 12774.6815,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9381,6 +9788,7 @@
       "liquidity": 15762.0855,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9404,6 +9812,7 @@
       "liquidity": 16768.5812,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9427,6 +9836,7 @@
       "liquidity": 19601.3065,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9450,6 +9860,7 @@
       "liquidity": 13902.3473,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9473,6 +9884,7 @@
       "liquidity": 15411.1119,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9496,6 +9908,7 @@
       "liquidity": 15419.8417,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9519,6 +9932,7 @@
       "liquidity": 982.10032,
       "absolute_payoff_pct": 6.799999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9542,6 +9956,7 @@
       "liquidity": 956.4841,
       "absolute_payoff_pct": 4.0000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9565,6 +9980,7 @@
       "liquidity": 11441.34953,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9588,6 +10004,7 @@
       "liquidity": 11539.6821,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9611,6 +10028,7 @@
       "liquidity": 12768.5046,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9634,6 +10052,7 @@
       "liquidity": 38009.0099,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9657,6 +10076,7 @@
       "liquidity": 4008.756,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9680,6 +10100,7 @@
       "liquidity": 3537.4393,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9703,6 +10124,7 @@
       "liquidity": 2737.296,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9726,6 +10148,7 @@
       "liquidity": 626.6515,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9749,6 +10172,7 @@
       "liquidity": 1080.0213,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9772,6 +10196,7 @@
       "liquidity": 5371.7691,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9795,6 +10220,7 @@
       "liquidity": 375.23246,
       "absolute_payoff_pct": 6.699999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9818,6 +10244,7 @@
       "liquidity": 4653.28227,
       "absolute_payoff_pct": 0.9499999999999953,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9841,6 +10268,7 @@
       "liquidity": 11012.16258,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9864,6 +10292,7 @@
       "liquidity": 10541.9904,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9887,6 +10316,7 @@
       "liquidity": 9678.3193,
       "absolute_payoff_pct": 9.999999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9910,6 +10340,7 @@
       "liquidity": 2496.36503,
       "absolute_payoff_pct": 1.5000000000000013,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9933,6 +10364,7 @@
       "liquidity": 7592.95506,
       "absolute_payoff_pct": 0.649999999999995,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9956,6 +10388,7 @@
       "liquidity": 12218.34303,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -9979,6 +10412,7 @@
       "liquidity": 28080.19396,
       "absolute_payoff_pct": 1.4499999999999957,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10002,6 +10436,7 @@
       "liquidity": 10507.70513,
       "absolute_payoff_pct": 1.4499999999999957,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10025,6 +10460,7 @@
       "liquidity": 13488.41572,
       "absolute_payoff_pct": 1.4499999999999957,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10048,6 +10484,7 @@
       "liquidity": 1135.03378,
       "absolute_payoff_pct": 1.4499999999999957,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10071,6 +10508,7 @@
       "liquidity": 1061.84867,
       "absolute_payoff_pct": 1.4499999999999957,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10094,6 +10532,7 @@
       "liquidity": 11997.379,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10117,6 +10556,7 @@
       "liquidity": 9744.1224,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10140,6 +10580,7 @@
       "liquidity": 18569.3223,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10163,6 +10604,7 @@
       "liquidity": 12745.3075,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10186,6 +10628,7 @@
       "liquidity": 10189.1872,
       "absolute_payoff_pct": 6.000000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10209,6 +10652,7 @@
       "liquidity": 5736.84173,
       "absolute_payoff_pct": 0.34999999999999476,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10232,6 +10676,7 @@
       "liquidity": 19914.3564,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10255,6 +10700,7 @@
       "liquidity": 450.099,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10278,6 +10724,7 @@
       "liquidity": 3627.04426,
       "absolute_payoff_pct": 5.900000000000006,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10301,6 +10748,7 @@
       "liquidity": 12981.89561,
       "absolute_payoff_pct": 5.900000000000006,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10324,6 +10772,7 @@
       "liquidity": 9955.88527,
       "absolute_payoff_pct": 1.4000000000000012,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10347,6 +10796,7 @@
       "liquidity": 1319.6083,
       "absolute_payoff_pct": 1.4000000000000012,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10370,6 +10820,7 @@
       "liquidity": 49781.14469,
       "absolute_payoff_pct": 5.75,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10393,6 +10844,7 @@
       "liquidity": 20956.18234,
       "absolute_payoff_pct": 5.75,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10416,6 +10868,7 @@
       "liquidity": 1486.79528,
       "absolute_payoff_pct": 7.650000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10439,6 +10892,7 @@
       "liquidity": 4375.97902,
       "absolute_payoff_pct": 0.8499999999999952,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10462,6 +10916,7 @@
       "liquidity": 9289.88568,
       "absolute_payoff_pct": 3.1000000000000028,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10485,6 +10940,7 @@
       "liquidity": 259.949,
       "absolute_payoff_pct": 3.5499999999999976,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10508,6 +10964,7 @@
       "liquidity": 50807.33053,
       "absolute_payoff_pct": 5.600000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10531,6 +10988,7 @@
       "liquidity": 2315.00629,
       "absolute_payoff_pct": 1.3499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10554,6 +11012,7 @@
       "liquidity": 4433.77157,
       "absolute_payoff_pct": 1.3499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10577,6 +11036,7 @@
       "liquidity": 16232.27225,
       "absolute_payoff_pct": 1.3499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10600,6 +11060,7 @@
       "liquidity": 1148.83986,
       "absolute_payoff_pct": 1.3499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10623,6 +11084,7 @@
       "liquidity": 1968.08669,
       "absolute_payoff_pct": 1.3499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10646,6 +11108,7 @@
       "liquidity": 2936.18987,
       "absolute_payoff_pct": 0.5499999999999949,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10669,6 +11132,7 @@
       "liquidity": 4853.92708,
       "absolute_payoff_pct": 5.6499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10692,6 +11156,7 @@
       "liquidity": 73674.8,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10715,6 +11180,7 @@
       "liquidity": 14580.3723,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10738,6 +11204,7 @@
       "liquidity": 3431.3376,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10761,6 +11228,7 @@
       "liquidity": 1181.52448,
       "absolute_payoff_pct": 3.500000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10784,6 +11252,7 @@
       "liquidity": 14266.52377,
       "absolute_payoff_pct": 2.5499999999999967,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10807,6 +11276,7 @@
       "liquidity": 319.41161,
       "absolute_payoff_pct": 3.500000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10830,6 +11300,7 @@
       "liquidity": 40683.5776,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10853,6 +11324,7 @@
       "liquidity": 2065.84115,
       "absolute_payoff_pct": 7.750000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10876,6 +11348,7 @@
       "liquidity": 228.7287,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10899,6 +11372,7 @@
       "liquidity": 10182.93345,
       "absolute_payoff_pct": 7.399999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10922,6 +11396,7 @@
       "liquidity": 5148.27124,
       "absolute_payoff_pct": 0.24999999999999467,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10945,6 +11420,7 @@
       "liquidity": 24505.98093,
       "absolute_payoff_pct": 7.350000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10968,6 +11444,7 @@
       "liquidity": 275497.27398,
       "absolute_payoff_pct": 0.8499999999999952,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -10991,6 +11468,7 @@
       "liquidity": 16083.7716,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11014,6 +11492,7 @@
       "liquidity": 19362.4653,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11037,6 +11516,7 @@
       "liquidity": 15576.0479,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11060,6 +11540,7 @@
       "liquidity": 15839.6399,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11083,6 +11564,7 @@
       "liquidity": 2978.6495,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11106,6 +11588,7 @@
       "liquidity": 17414.1695,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11129,6 +11612,7 @@
       "liquidity": 12141.8512,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11152,6 +11636,7 @@
       "liquidity": 17287.0807,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11175,6 +11660,7 @@
       "liquidity": 14146.4709,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11198,6 +11684,7 @@
       "liquidity": 14279.3584,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11221,6 +11708,7 @@
       "liquidity": 10832.81934,
       "absolute_payoff_pct": 7.299999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11244,6 +11732,7 @@
       "liquidity": 1890.67505,
       "absolute_payoff_pct": 7.299999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11267,6 +11756,7 @@
       "liquidity": 1352.76615,
       "absolute_payoff_pct": 1.749999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11290,6 +11780,7 @@
       "liquidity": 2335.96182,
       "absolute_payoff_pct": 1.3000000000000012,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11313,6 +11804,7 @@
       "liquidity": 868.49562,
       "absolute_payoff_pct": 7.750000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11336,6 +11828,7 @@
       "liquidity": 17959.24618,
       "absolute_payoff_pct": 5.449999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11359,6 +11852,7 @@
       "liquidity": 77177.34366,
       "absolute_payoff_pct": 5.35,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11382,6 +11876,7 @@
       "liquidity": 574.70364,
       "absolute_payoff_pct": 3.7000000000000033,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11405,6 +11900,7 @@
       "liquidity": 1095.2898,
       "absolute_payoff_pct": 3.400000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11428,6 +11924,7 @@
       "liquidity": 8656.2242,
       "absolute_payoff_pct": 8.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11451,6 +11948,7 @@
       "liquidity": 24845.43876,
       "absolute_payoff_pct": 0.9499999999999953,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11474,6 +11972,7 @@
       "liquidity": 45677.84704,
       "absolute_payoff_pct": 1.2499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11497,6 +11996,7 @@
       "liquidity": 17253.8402,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11520,6 +12020,7 @@
       "liquidity": 9835.602,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11543,6 +12044,7 @@
       "liquidity": 11959.1526,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11566,6 +12068,7 @@
       "liquidity": 4805.2928,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11589,6 +12092,7 @@
       "liquidity": 97528.0343,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11612,6 +12116,7 @@
       "liquidity": 160447.3438,
       "absolute_payoff_pct": 9.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11635,6 +12140,7 @@
       "liquidity": 1893.80347,
       "absolute_payoff_pct": 0.5000000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11658,6 +12164,7 @@
       "liquidity": 18428.02937,
       "absolute_payoff_pct": 1.2499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11681,6 +12188,7 @@
       "liquidity": 123378.18366,
       "absolute_payoff_pct": 6.8500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11704,6 +12212,7 @@
       "liquidity": 3615729.3195,
       "absolute_payoff_pct": 1.849999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11727,6 +12236,7 @@
       "liquidity": 546.24049,
       "absolute_payoff_pct": 3.200000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11750,6 +12260,7 @@
       "liquidity": 8709.39734,
       "absolute_payoff_pct": 6.799999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11773,6 +12284,7 @@
       "liquidity": 2017.82281,
       "absolute_payoff_pct": 1.200000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11796,6 +12308,7 @@
       "liquidity": 4254.78016,
       "absolute_payoff_pct": 1.200000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11819,6 +12332,7 @@
       "liquidity": 1118.56615,
       "absolute_payoff_pct": 7.099999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11842,6 +12356,7 @@
       "liquidity": 8884.469,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11865,6 +12380,7 @@
       "liquidity": 8656.191,
       "absolute_payoff_pct": 7.9999999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11888,6 +12404,7 @@
       "liquidity": 13759.10692,
       "absolute_payoff_pct": 4.049999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11911,6 +12428,7 @@
       "liquidity": 583.51181,
       "absolute_payoff_pct": 3.1000000000000028,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11934,6 +12452,7 @@
       "liquidity": 3770.42616,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11957,6 +12476,7 @@
       "liquidity": 12600.5029,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -11980,6 +12500,7 @@
       "liquidity": 1983.48647,
       "absolute_payoff_pct": 6.65,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12003,6 +12524,7 @@
       "liquidity": 17291.56342,
       "absolute_payoff_pct": 4.900000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12026,6 +12548,7 @@
       "liquidity": 11150.88054,
       "absolute_payoff_pct": 6.599999999999994,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12049,6 +12572,7 @@
       "liquidity": 1632.67595,
       "absolute_payoff_pct": 6.8500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12072,6 +12596,7 @@
       "liquidity": 423.34,
       "absolute_payoff_pct": 3.049999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12095,6 +12620,7 @@
       "liquidity": 14845.266,
       "absolute_payoff_pct": 0.7499999999999951,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12118,6 +12644,7 @@
       "liquidity": 81106.4488,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12141,6 +12668,7 @@
       "liquidity": 2351.67037,
       "absolute_payoff_pct": 1.1499999999999955,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12164,6 +12692,7 @@
       "liquidity": 541889.04416,
       "absolute_payoff_pct": 1.749999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12187,6 +12716,7 @@
       "liquidity": 211768.28569,
       "absolute_payoff_pct": 6.45,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12210,6 +12740,7 @@
       "liquidity": 4675.55922,
       "absolute_payoff_pct": 6.45,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12233,6 +12764,7 @@
       "liquidity": 53.45186,
       "absolute_payoff_pct": 6.45,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12256,6 +12788,7 @@
       "liquidity": 8265.316,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12279,6 +12812,7 @@
       "liquidity": 9449.00383,
       "absolute_payoff_pct": 6.2999999999999945,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12302,6 +12836,7 @@
       "liquidity": 2318.53479,
       "absolute_payoff_pct": 0.44999999999999485,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12325,6 +12860,7 @@
       "liquidity": 5159.2538,
       "absolute_payoff_pct": 15.000000000000002,
       "duration_bucket": "366–730d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12348,6 +12884,7 @@
       "liquidity": 2534.15807,
       "absolute_payoff_pct": 1.100000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12371,6 +12908,7 @@
       "liquidity": 152.99826,
       "absolute_payoff_pct": 2.9000000000000026,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12394,6 +12932,7 @@
       "liquidity": 16017.46629,
       "absolute_payoff_pct": 2.500000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12417,6 +12956,7 @@
       "liquidity": 65879.00708,
       "absolute_payoff_pct": 4.549999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12440,6 +12980,7 @@
       "liquidity": 1117.3517,
       "absolute_payoff_pct": 2.849999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12463,6 +13004,7 @@
       "liquidity": 224.7212,
       "absolute_payoff_pct": 5.800000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12486,6 +13028,7 @@
       "liquidity": 4066920.93593,
       "absolute_payoff_pct": 1.649999999999996,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12509,6 +13052,7 @@
       "liquidity": 2759.25521,
       "absolute_payoff_pct": 6.100000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12532,6 +13076,7 @@
       "liquidity": 1243.58066,
       "absolute_payoff_pct": 2.849999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12555,6 +13100,7 @@
       "liquidity": 19727.09188,
       "absolute_payoff_pct": 5.75,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12578,6 +13124,7 @@
       "liquidity": 1735.46546,
       "absolute_payoff_pct": 6.05,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12601,6 +13148,7 @@
       "liquidity": 14585.22338,
       "absolute_payoff_pct": 6.05,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12624,6 +13172,7 @@
       "liquidity": 1335.30814,
       "absolute_payoff_pct": 6.2999999999999945,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12647,6 +13196,7 @@
       "liquidity": 3131.07172,
       "absolute_payoff_pct": 4.5000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12670,6 +13220,7 @@
       "liquidity": 16345.524,
       "absolute_payoff_pct": 4.5000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12693,6 +13244,7 @@
       "liquidity": 5839.7959,
       "absolute_payoff_pct": 14.500000000000002,
       "duration_bucket": "366–730d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12716,6 +13268,7 @@
       "liquidity": 12596.3467,
       "absolute_payoff_pct": 6.000000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12739,6 +13292,7 @@
       "liquidity": 8922.3219,
       "absolute_payoff_pct": 6.000000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12762,6 +13316,7 @@
       "liquidity": 4320.6899,
       "absolute_payoff_pct": 6.000000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12785,6 +13340,7 @@
       "liquidity": 60419.26155,
       "absolute_payoff_pct": 1.0499999999999954,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12808,6 +13364,7 @@
       "liquidity": 2608.92227,
       "absolute_payoff_pct": 1.0499999999999954,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12831,6 +13388,7 @@
       "liquidity": 12094.85394,
       "absolute_payoff_pct": 1.0499999999999954,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12854,6 +13412,7 @@
       "liquidity": 2108.13207,
       "absolute_payoff_pct": 1.0499999999999954,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12877,6 +13436,7 @@
       "liquidity": 5423.4626,
       "absolute_payoff_pct": 6.999999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12900,6 +13460,7 @@
       "liquidity": 546.85789,
       "absolute_payoff_pct": 14.149999999999995,
       "duration_bucket": "366–730d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12923,6 +13484,7 @@
       "liquidity": 6927.6122,
       "absolute_payoff_pct": 5.85,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12946,6 +13508,7 @@
       "liquidity": 12333.05491,
       "absolute_payoff_pct": 4.349999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12969,6 +13532,7 @@
       "liquidity": 622.7666,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -12992,6 +13556,7 @@
       "liquidity": 8434.62312,
       "absolute_payoff_pct": 0.24999999999999467,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13015,6 +13580,7 @@
       "liquidity": 5075.6827,
       "absolute_payoff_pct": 14.000000000000002,
       "duration_bucket": "366–730d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13038,6 +13604,7 @@
       "liquidity": 397.05701,
       "absolute_payoff_pct": 1.0000000000000009,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13061,6 +13628,7 @@
       "liquidity": 3648.65329,
       "absolute_payoff_pct": 4.249999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13084,6 +13652,7 @@
       "liquidity": 6852.90077,
       "absolute_payoff_pct": 2.100000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13107,6 +13676,7 @@
       "liquidity": 9231.64277,
       "absolute_payoff_pct": 5.6499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13130,6 +13700,7 @@
       "liquidity": 10031.63797,
       "absolute_payoff_pct": 1.9000000000000017,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13153,6 +13724,7 @@
       "liquidity": 4360.85844,
       "absolute_payoff_pct": 4.200000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13176,6 +13748,7 @@
       "liquidity": 722.42596,
       "absolute_payoff_pct": 4.200000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13199,6 +13772,7 @@
       "liquidity": 118210.09111,
       "absolute_payoff_pct": 3.3499999999999974,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13222,6 +13796,7 @@
       "liquidity": 7823.31032,
       "absolute_payoff_pct": 5.600000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13245,6 +13820,7 @@
       "liquidity": 292.57066,
       "absolute_payoff_pct": 2.5499999999999967,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13268,6 +13844,7 @@
       "liquidity": 9913.98264,
       "absolute_payoff_pct": 2.749999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13291,6 +13868,7 @@
       "liquidity": 17045.396,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13314,6 +13892,7 @@
       "liquidity": 12167.7701,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13337,6 +13916,7 @@
       "liquidity": 2567.7236,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13360,6 +13940,7 @@
       "liquidity": 85677.5393,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13383,6 +13964,7 @@
       "liquidity": 19996.3972,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13406,6 +13988,7 @@
       "liquidity": 36332.3424,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13429,6 +14012,7 @@
       "liquidity": 11882.9064,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13452,6 +14036,7 @@
       "liquidity": 64600.20903,
       "absolute_payoff_pct": 7.550000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13475,6 +14060,7 @@
       "liquidity": 5330.53919,
       "absolute_payoff_pct": 4.100000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13498,6 +14084,7 @@
       "liquidity": 114569.1946,
       "absolute_payoff_pct": 7.499999999999996,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13521,6 +14108,7 @@
       "liquidity": 8537.4403,
       "absolute_payoff_pct": 6.499999999999995,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13544,6 +14132,7 @@
       "liquidity": 269.8161,
       "absolute_payoff_pct": 5.149999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13567,6 +14156,7 @@
       "liquidity": 11196.85247,
       "absolute_payoff_pct": 0.9499999999999953,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13590,6 +14180,7 @@
       "liquidity": 2110.95368,
       "absolute_payoff_pct": 0.9499999999999953,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13613,6 +14204,7 @@
       "liquidity": 424.86977,
       "absolute_payoff_pct": 2.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13636,6 +14228,7 @@
       "liquidity": 492.022,
       "absolute_payoff_pct": 2.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13659,6 +14252,7 @@
       "liquidity": 281.77289,
       "absolute_payoff_pct": 2.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13682,6 +14276,7 @@
       "liquidity": 460.037,
       "absolute_payoff_pct": 2.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13705,6 +14300,7 @@
       "liquidity": 86503.34248,
       "absolute_payoff_pct": 7.450000000000001,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13728,6 +14324,7 @@
       "liquidity": 6222.01641,
       "absolute_payoff_pct": 2.0000000000000018,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13751,6 +14348,7 @@
       "liquidity": 18058.49839,
       "absolute_payoff_pct": 5.400000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13774,6 +14372,7 @@
       "liquidity": 2290088.25723,
       "absolute_payoff_pct": 1.4499999999999957,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13797,6 +14396,7 @@
       "liquidity": 60795.99945,
       "absolute_payoff_pct": 3.949999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13820,6 +14420,7 @@
       "liquidity": 7116.78457,
       "absolute_payoff_pct": 5.35,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13843,6 +14444,7 @@
       "liquidity": 1354.40679,
       "absolute_payoff_pct": 5.35,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13866,6 +14468,7 @@
       "liquidity": 795.2565,
       "absolute_payoff_pct": 4.0000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13889,6 +14492,7 @@
       "liquidity": 350.37811,
       "absolute_payoff_pct": 5.049999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13912,6 +14516,7 @@
       "liquidity": 200.31351,
       "absolute_payoff_pct": 5.049999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13935,6 +14540,7 @@
       "liquidity": 997.22963,
       "absolute_payoff_pct": 2.4499999999999966,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13958,6 +14564,7 @@
       "liquidity": 12266.30813,
       "absolute_payoff_pct": 5.300000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -13981,6 +14588,7 @@
       "liquidity": 645.4486,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14004,6 +14612,7 @@
       "liquidity": 228.2367,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14027,6 +14636,7 @@
       "liquidity": 214.03544,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14050,6 +14660,7 @@
       "liquidity": 11207.16236,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14073,6 +14684,7 @@
       "liquidity": 10155.54145,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14096,6 +14708,7 @@
       "liquidity": 554.93234,
       "absolute_payoff_pct": 4.149999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14119,6 +14732,7 @@
       "liquidity": 32450.36056,
       "absolute_payoff_pct": 2.100000000000002,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14142,6 +14756,7 @@
       "liquidity": 14186.85201,
       "absolute_payoff_pct": 3.049999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14165,6 +14780,7 @@
       "liquidity": 11923.05509,
       "absolute_payoff_pct": 5.149999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14188,6 +14804,7 @@
       "liquidity": 52884.5384,
       "absolute_payoff_pct": 4.5000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14211,6 +14828,7 @@
       "liquidity": 8910.5393,
       "absolute_payoff_pct": 6.000000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14234,6 +14852,7 @@
       "liquidity": 8673.5982,
       "absolute_payoff_pct": 6.000000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14257,6 +14876,7 @@
       "liquidity": 8714.089,
       "absolute_payoff_pct": 6.000000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14280,6 +14900,7 @@
       "liquidity": 10622.88752,
       "absolute_payoff_pct": 3.749999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14303,6 +14924,7 @@
       "liquidity": 224.95048,
       "absolute_payoff_pct": 4.749999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14326,6 +14948,7 @@
       "liquidity": 3713.3626,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14349,6 +14972,7 @@
       "liquidity": 5291.0618,
       "absolute_payoff_pct": 5.000000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14372,6 +14996,7 @@
       "liquidity": 576.28378,
       "absolute_payoff_pct": 3.949999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14395,6 +15020,7 @@
       "liquidity": 1279.85524,
       "absolute_payoff_pct": 12.2,
       "duration_bucket": "366–730d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14418,6 +15044,7 @@
       "liquidity": 14896.18656,
       "absolute_payoff_pct": 4.949999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14441,6 +15068,7 @@
       "liquidity": 2468.4048,
       "absolute_payoff_pct": 0.34999999999999476,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14464,6 +15092,7 @@
       "liquidity": 2275.22453,
       "absolute_payoff_pct": 4.900000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14487,6 +15116,7 @@
       "liquidity": 68001.98815,
       "absolute_payoff_pct": 4.900000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14510,6 +15140,7 @@
       "liquidity": 941.29983,
       "absolute_payoff_pct": 5.200000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14533,6 +15164,7 @@
       "liquidity": 4173.63067,
       "absolute_payoff_pct": 0.8499999999999952,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14556,6 +15188,7 @@
       "liquidity": 702297.95929,
       "absolute_payoff_pct": 0.5499999999999949,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14579,6 +15212,7 @@
       "liquidity": 676.79673,
       "absolute_payoff_pct": 5.149999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14602,6 +15236,7 @@
       "liquidity": 2888.94347,
       "absolute_payoff_pct": 3.600000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14625,6 +15260,7 @@
       "liquidity": 17979.20808,
       "absolute_payoff_pct": 4.549999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14648,6 +15284,7 @@
       "liquidity": 20575.93014,
       "absolute_payoff_pct": 0.8499999999999952,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14671,6 +15308,7 @@
       "liquidity": 296.5968,
       "absolute_payoff_pct": 4.5000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14694,6 +15332,7 @@
       "liquidity": 32626.72415,
       "absolute_payoff_pct": 3.500000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14717,6 +15356,7 @@
       "liquidity": 345.92334,
       "absolute_payoff_pct": 2.200000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14740,6 +15380,7 @@
       "liquidity": 19563.36076,
       "absolute_payoff_pct": 4.700000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14763,6 +15404,7 @@
       "liquidity": 4285081.92769,
       "absolute_payoff_pct": 1.2499999999999956,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14786,6 +15428,7 @@
       "liquidity": 840.52914,
       "absolute_payoff_pct": 2.1499999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14809,6 +15452,7 @@
       "liquidity": 641.78604,
       "absolute_payoff_pct": 2.1499999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14832,6 +15476,7 @@
       "liquidity": 62804.07574,
       "absolute_payoff_pct": 4.649999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14855,6 +15500,7 @@
       "liquidity": 5186.13211,
       "absolute_payoff_pct": 0.7000000000000006,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14878,6 +15524,7 @@
       "liquidity": 11681.74207,
       "absolute_payoff_pct": 4.600000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14901,6 +15548,7 @@
       "liquidity": 8877.0092,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14924,6 +15572,7 @@
       "liquidity": 5293.69,
       "absolute_payoff_pct": 5.500000000000005,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14947,6 +15596,7 @@
       "liquidity": 33495.60123,
       "absolute_payoff_pct": 0.8000000000000007,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14970,6 +15620,7 @@
       "liquidity": 24654.46734,
       "absolute_payoff_pct": 4.549999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -14993,6 +15644,7 @@
       "liquidity": 2737.83086,
       "absolute_payoff_pct": 4.549999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15016,6 +15668,7 @@
       "liquidity": 116106.53629,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15039,6 +15692,7 @@
       "liquidity": 26883.67487,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15062,6 +15716,7 @@
       "liquidity": 21605.28262,
       "absolute_payoff_pct": 4.249999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15085,6 +15740,7 @@
       "liquidity": 12561.5174,
       "absolute_payoff_pct": 10.999999999999998,
       "duration_bucket": "366–730d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15108,6 +15764,7 @@
       "liquidity": 7172.27052,
       "absolute_payoff_pct": 4.449999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15131,6 +15788,7 @@
       "liquidity": 1272.00207,
       "absolute_payoff_pct": 4.449999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15154,6 +15812,7 @@
       "liquidity": 540.06218,
       "absolute_payoff_pct": 10.999999999999998,
       "duration_bucket": "366–730d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15177,6 +15836,7 @@
       "liquidity": 12549.40899,
       "absolute_payoff_pct": 0.5000000000000004,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15200,6 +15860,7 @@
       "liquidity": 20928.0149,
       "absolute_payoff_pct": 4.149999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15223,6 +15884,7 @@
       "liquidity": 18009.57971,
       "absolute_payoff_pct": 3.2499999999999973,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15246,6 +15908,7 @@
       "liquidity": 16159.21768,
       "absolute_payoff_pct": 3.2499999999999973,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15269,6 +15932,7 @@
       "liquidity": 1848.21999,
       "absolute_payoff_pct": 3.400000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15292,6 +15956,7 @@
       "liquidity": 718.63528,
       "absolute_payoff_pct": 3.400000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15315,6 +15980,7 @@
       "liquidity": 76951.71593,
       "absolute_payoff_pct": 3.1499999999999972,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15338,6 +16004,7 @@
       "liquidity": 204.96988,
       "absolute_payoff_pct": 4.049999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15361,6 +16028,7 @@
       "liquidity": 2970.98164,
       "absolute_payoff_pct": 4.249999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15384,6 +16052,7 @@
       "liquidity": 151886.84231,
       "absolute_payoff_pct": 4.249999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15407,6 +16076,7 @@
       "liquidity": 169.92323,
       "absolute_payoff_pct": 4.0000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15430,6 +16100,7 @@
       "liquidity": 120741.67771,
       "absolute_payoff_pct": 3.749999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15453,6 +16124,7 @@
       "liquidity": 31816.56573,
       "absolute_payoff_pct": 2.500000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15476,6 +16148,7 @@
       "liquidity": 40372.80012,
       "absolute_payoff_pct": 3.049999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15499,6 +16172,7 @@
       "liquidity": 37642.02567,
       "absolute_payoff_pct": 4.149999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15522,6 +16196,7 @@
       "liquidity": 28356.18268,
       "absolute_payoff_pct": 3.049999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15545,6 +16220,7 @@
       "liquidity": 1480.48949,
       "absolute_payoff_pct": 4.149999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15568,6 +16244,7 @@
       "liquidity": 19033.9493,
       "absolute_payoff_pct": 4.100000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15591,6 +16268,7 @@
       "liquidity": 9862.37685,
       "absolute_payoff_pct": 4.100000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15614,6 +16292,7 @@
       "liquidity": 11570.43209,
       "absolute_payoff_pct": 3.049999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15637,6 +16316,7 @@
       "liquidity": 29767.77043,
       "absolute_payoff_pct": 3.0000000000000027,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15660,6 +16340,7 @@
       "liquidity": 600.23377,
       "absolute_payoff_pct": 3.849999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15683,6 +16364,7 @@
       "liquidity": 8171.09412,
       "absolute_payoff_pct": 4.049999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15706,6 +16388,7 @@
       "liquidity": 13806.55689,
       "absolute_payoff_pct": 4.049999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15729,6 +16412,7 @@
       "liquidity": 2491.70071,
       "absolute_payoff_pct": 4.249999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15752,6 +16436,7 @@
       "liquidity": 27500.19787,
       "absolute_payoff_pct": 4.049999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15775,6 +16460,7 @@
       "liquidity": 2015.10088,
       "absolute_payoff_pct": 4.049999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15798,6 +16484,7 @@
       "liquidity": 11957.96179,
       "absolute_payoff_pct": 4.049999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15821,6 +16508,7 @@
       "liquidity": 13253.40166,
       "absolute_payoff_pct": 4.0000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15844,6 +16532,7 @@
       "liquidity": 585.38786,
       "absolute_payoff_pct": 3.1499999999999972,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15867,6 +16556,7 @@
       "liquidity": 5215330.4858,
       "absolute_payoff_pct": 1.0499999999999954,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15890,6 +16580,7 @@
       "liquidity": 3190856.14213,
       "absolute_payoff_pct": 1.0499999999999954,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15913,6 +16604,7 @@
       "liquidity": 6021.17044,
       "absolute_payoff_pct": 3.949999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15936,6 +16628,7 @@
       "liquidity": 2254.50976,
       "absolute_payoff_pct": 4.949999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15959,6 +16652,7 @@
       "liquidity": 1765.12161,
       "absolute_payoff_pct": 4.949999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -15982,6 +16676,7 @@
       "liquidity": 1999.33327,
       "absolute_payoff_pct": 4.149999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16005,6 +16700,7 @@
       "liquidity": 106461.12473,
       "absolute_payoff_pct": 0.7000000000000006,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16028,6 +16724,7 @@
       "liquidity": 1479.56103,
       "absolute_payoff_pct": 9.799999999999997,
       "duration_bucket": "366–730d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16051,6 +16748,7 @@
       "liquidity": 1019.80421,
       "absolute_payoff_pct": 4.049999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16074,6 +16772,7 @@
       "liquidity": 1291.5398,
       "absolute_payoff_pct": 4.0000000000000036,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16097,6 +16796,7 @@
       "liquidity": 228.53795,
       "absolute_payoff_pct": 3.600000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16120,6 +16820,7 @@
       "liquidity": 143.68637,
       "absolute_payoff_pct": 4.200000000000004,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16143,6 +16844,7 @@
       "liquidity": 2503.84723,
       "absolute_payoff_pct": 2.749999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16166,6 +16868,7 @@
       "liquidity": 1517.42232,
       "absolute_payoff_pct": 3.949999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16189,6 +16892,7 @@
       "liquidity": 3674.89966,
       "absolute_payoff_pct": 3.749999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16212,6 +16916,7 @@
       "liquidity": 9662.74283,
       "absolute_payoff_pct": 3.749999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16235,6 +16940,7 @@
       "liquidity": 589.39728,
       "absolute_payoff_pct": 3.749999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16258,6 +16964,7 @@
       "liquidity": 333.9098,
       "absolute_payoff_pct": 1.7000000000000015,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16281,6 +16988,7 @@
       "liquidity": 93068.47364,
       "absolute_payoff_pct": 5.149999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16304,6 +17012,7 @@
       "liquidity": 5288.27484,
       "absolute_payoff_pct": 4.449999999999998,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16327,6 +17036,7 @@
       "liquidity": 11452.50835,
       "absolute_payoff_pct": 3.7000000000000033,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16350,6 +17060,7 @@
       "liquidity": 16167.59627,
       "absolute_payoff_pct": 2.749999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16373,6 +17084,7 @@
       "liquidity": 1787.12084,
       "absolute_payoff_pct": 3.6499999999999977,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16396,6 +17108,7 @@
       "liquidity": 12767.73955,
       "absolute_payoff_pct": 3.600000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16419,6 +17132,7 @@
       "liquidity": 3233.92938,
       "absolute_payoff_pct": 1.200000000000001,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16442,6 +17156,7 @@
       "liquidity": 1737613.44207,
       "absolute_payoff_pct": 0.9499999999999953,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16465,6 +17180,7 @@
       "liquidity": 3534.00069,
       "absolute_payoff_pct": 3.600000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16488,6 +17204,7 @@
       "liquidity": 38865.48005,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16511,6 +17228,7 @@
       "liquidity": 36496.23121,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16534,6 +17252,7 @@
       "liquidity": 36419.26255,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16557,6 +17276,7 @@
       "liquidity": 3859.54479,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16580,6 +17300,7 @@
       "liquidity": 8644.25622,
       "absolute_payoff_pct": 0.14999999999999458,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16603,6 +17324,7 @@
       "liquidity": 11339.65705,
       "absolute_payoff_pct": 3.5499999999999976,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16626,6 +17348,7 @@
       "liquidity": 1502.59559,
       "absolute_payoff_pct": 3.7000000000000033,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16649,6 +17372,7 @@
       "liquidity": 587.57963,
       "absolute_payoff_pct": 1.6000000000000014,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16672,6 +17396,7 @@
       "liquidity": 16947.11334,
       "absolute_payoff_pct": 2.6000000000000023,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16695,6 +17420,7 @@
       "liquidity": 47012.42302,
       "absolute_payoff_pct": 2.5499999999999967,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16718,6 +17444,7 @@
       "liquidity": 1725.03739,
       "absolute_payoff_pct": 0.6000000000000005,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16741,6 +17468,7 @@
       "liquidity": 29710.2413,
       "absolute_payoff_pct": 2.5499999999999967,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16764,6 +17492,7 @@
       "liquidity": 10855.3165,
       "absolute_payoff_pct": 1.1499999999999955,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16787,6 +17516,7 @@
       "liquidity": 1034.42152,
       "absolute_payoff_pct": 1.5499999999999958,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16810,6 +17540,7 @@
       "liquidity": 395.638,
       "absolute_payoff_pct": 1.5499999999999958,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16833,6 +17564,7 @@
       "liquidity": 867.69997,
       "absolute_payoff_pct": 3.5499999999999976,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16856,6 +17588,7 @@
       "liquidity": 92154.85489,
       "absolute_payoff_pct": 3.3499999999999974,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16879,6 +17612,7 @@
       "liquidity": 86720.88221,
       "absolute_payoff_pct": 4.649999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16902,6 +17636,7 @@
       "liquidity": 92037.39929,
       "absolute_payoff_pct": 4.649999999999999,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16925,6 +17660,7 @@
       "liquidity": 6738.35071,
       "absolute_payoff_pct": 0.24999999999999467,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16948,6 +17684,7 @@
       "liquidity": 31768.80156,
       "absolute_payoff_pct": 2.4499999999999966,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16971,6 +17708,7 @@
       "liquidity": 27561.37805,
       "absolute_payoff_pct": 3.1000000000000028,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -16994,6 +17732,7 @@
       "liquidity": 15569.84586,
       "absolute_payoff_pct": 3.2499999999999973,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17017,6 +17756,7 @@
       "liquidity": 3541.23771,
       "absolute_payoff_pct": 1.6000000000000014,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17040,6 +17780,7 @@
       "liquidity": 7167.63556,
       "absolute_payoff_pct": 3.2499999999999973,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17063,6 +17804,7 @@
       "liquidity": 5329.70028,
       "absolute_payoff_pct": 3.2499999999999973,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17086,6 +17828,7 @@
       "liquidity": 742.41769,
       "absolute_payoff_pct": 2.400000000000002,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17109,6 +17852,7 @@
       "liquidity": 33017.80571,
       "absolute_payoff_pct": 2.3499999999999965,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17132,6 +17876,7 @@
       "liquidity": 3306581.77683,
       "absolute_payoff_pct": 0.8499999999999952,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17155,6 +17900,7 @@
       "liquidity": 12459.70446,
       "absolute_payoff_pct": 3.200000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17178,6 +17924,7 @@
       "liquidity": 31035.07421,
       "absolute_payoff_pct": 0.5499999999999949,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17201,6 +17948,7 @@
       "liquidity": 5556.60996,
       "absolute_payoff_pct": 0.5499999999999949,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17224,6 +17972,7 @@
       "liquidity": 2353.33685,
       "absolute_payoff_pct": 0.5499999999999949,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17247,6 +17996,7 @@
       "liquidity": 1868.93883,
       "absolute_payoff_pct": 0.5499999999999949,
       "duration_bucket": "≤90d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17270,6 +18020,7 @@
       "liquidity": 595.95055,
       "absolute_payoff_pct": 2.4499999999999966,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17293,6 +18044,7 @@
       "liquidity": 46392.5201,
       "absolute_payoff_pct": 2.2499999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17316,6 +18068,7 @@
       "liquidity": 1332.01372,
       "absolute_payoff_pct": 3.1499999999999972,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17339,6 +18092,7 @@
       "liquidity": 2328.50503,
       "absolute_payoff_pct": 3.200000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17362,6 +18116,7 @@
       "liquidity": 2122.70394,
       "absolute_payoff_pct": 3.049999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17385,6 +18140,7 @@
       "liquidity": 348.5127,
       "absolute_payoff_pct": 2.849999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17408,6 +18164,7 @@
       "liquidity": 7194.86157,
       "absolute_payoff_pct": 3.600000000000003,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17431,6 +18188,7 @@
       "liquidity": 1964.15639,
       "absolute_payoff_pct": 3.1499999999999972,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17454,6 +18212,7 @@
       "liquidity": 3063.28875,
       "absolute_payoff_pct": 3.0000000000000027,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17477,6 +18236,7 @@
       "liquidity": 3271.75482,
       "absolute_payoff_pct": 3.5499999999999976,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17500,6 +18260,7 @@
       "liquidity": 17964.46917,
       "absolute_payoff_pct": 2.949999999999997,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null
@@ -17523,6 +18284,7 @@
       "liquidity": 50587.83047,
       "absolute_payoff_pct": 2.1499999999999964,
       "duration_bucket": "91–365d",
+      "adjusted_p_win": null,
       "edge_pct": null,
       "kelly_fraction": null,
       "suggested_size_pct": null

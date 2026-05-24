@@ -92,15 +92,40 @@ def _kelly_fraction(price: float, p_win: float) -> float:
     return max(0.0, min(1.0, f))
 
 
+# Default haircut table — risk_score → probability points to subtract
+# from the LLM's subjective_p_win before computing edge/Kelly.
+RISK_HAIRCUT = {1: 0.00, 2: 0.00, 3: 0.05, 4: 0.10, 5: 0.20}
+
+
+def _adjust_p_win(p_win: float | None, risk_score: int | None) -> float | None:
+    """Apply the risk-score haircut to the LLM's raw subjective_p_win.
+
+    This is an auditable, code-side policy transform — kept out of the prompt
+    so the LLM produces an unconditioned first-principles estimate and the
+    risk adjustment is visible/configurable in exactly one place.
+    """
+    if p_win is None or risk_score is None:
+        return None
+    haircut = RISK_HAIRCUT.get(int(risk_score), 0.20)
+    return max(0.0, p_win - haircut)
+
+
 def enrich_rows(rows: list[dict]) -> list[dict]:
-    """Compute derived display fields (absolute_payoff_pct, duration_bucket, edge, kelly)."""
+    """Compute derived display fields (absolute_payoff_pct, duration_bucket, edge, kelly).
+
+    The LLM's raw ``subjective_p_win`` is preserved on the row for display, but
+    edge and Kelly are computed against ``adjusted_p_win`` — the raw value
+    minus a risk-score-keyed haircut (see ``RISK_HAIRCUT``).
+    """
     for r in rows:
         r["absolute_payoff_pct"] = (1 - r["price"]) * 100
         r["duration_bucket"] = duration_bucket(r["days_to_resolution"])
-        p_win = r.get("subjective_p_win")
-        if p_win is not None:
-            r["edge_pct"] = (p_win - r["price"]) * 100
-            r["kelly_fraction"] = _kelly_fraction(r["price"], p_win)
+        p_raw = r.get("subjective_p_win")
+        p_adj = _adjust_p_win(p_raw, r.get("risk_score"))
+        r["adjusted_p_win"] = p_adj
+        if p_adj is not None:
+            r["edge_pct"] = (p_adj - r["price"]) * 100
+            r["kelly_fraction"] = _kelly_fraction(r["price"], p_adj)
         else:
             r["edge_pct"] = None
             r["kelly_fraction"] = None

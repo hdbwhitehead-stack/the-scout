@@ -14,9 +14,9 @@ from claude_agent_sdk import (
 
 from scout.score import Candidate
 
-SYSTEM_PROMPT = """You are evaluating Polymarket prediction-market opportunities for a bettor considering taking the favored side of a market trading near a dollar.
+SYSTEM_PROMPT = """You are evaluating a prediction-market question for a bettor considering taking the favored side.
 
-For each market you receive: the question, the full resolution criteria, the end date, the side being considered, and the current market price.
+For each market you receive: the question, the full resolution criteria, the end date, and the side under consideration.
 
 Output ONLY a single JSON object (no prose, no code fences) with four fields:
 
@@ -24,29 +24,29 @@ Output ONLY a single JSON object (no prose, no code fences) with four fields:
   "risk_score": <integer 1 to 5>,
   "risk_rationale": "<one sentence: what makes resolution clean or messy>",
   "subjective_p_win": <float 0.0 to 1.0>,
-  "summary": "<one sentence: the bet, its side, approximate yield, headline risk>"
+  "summary": "<one sentence: the bet, its side, headline factor>"
 }
 
-# risk_score rubric (resolution-criterion clarity only):
+# risk_score rubric (resolution-criterion clarity only — independent of probability)
   1 — Objective: government data, official press release, on-chain event, sports box score
-  2 — Mostly objective with one minor source-of-truth ambiguity
-  3 — Some judgement required (counting media mentions, interpreting a vague threshold)
+  2 — Mostly objective with minor source-of-truth ambiguity
+  3 — Some judgement required (vague threshold, counting media mentions)
   4 — Substantially subjective (operator discretion, hard-to-verify private events)
-  5 — Highly subjective or unarbitrable (social-media polls, supernatural events, vague public-perception questions)
+  5 — Highly subjective or unarbitrable (polls, supernatural events, vague public-perception questions)
 
-# subjective_p_win — your independent estimate of P(favored side wins)
+# subjective_p_win — independent probability estimate
 
-Give your honest probability. Reason from base rates, the underlying real-world event, the resolution mechanism, and any domain knowledge you can bring. Do NOT mechanically anchor to the market price. The market price is the wisdom of crowds — a reasonable prior when you have no independent view, but you should deviate confidently when you do.
+Estimate the probability that the SIDE under consideration wins, reasoning from first principles:
+  • Base rates for the underlying event class (e.g. mortality tables, election incumbency, historical sports outcomes)
+  • The mechanics of the resolution mechanism and what fraction of the time it produces the "right" answer
+  • Domain knowledge about the specific situation
+  • Time to resolution and what events could plausibly change the outcome
 
-Calibration anchors:
-  • A well-defined market near a dollar typically deserves a subjective probability AT OR VERY SLIGHTLY ABOVE the market price — the market has the same information you do, and rarely makes systematic errors on objective binaries.
-  • Markets with risk_score 3+ deserve subjective probabilities NOTICEABLY BELOW the market price. The market is pricing the underlying event; you should additionally discount for the probability that the question resolves contrary to objective reality due to oracle disputes, ambiguous wording, or operator discretion. This adjustment is typically 3–10 percentage points downward, occasionally more.
-  • If the resolution criteria are subjective or the underlying event involves coordinated human behavior (markets, elections, sports), defer more to market price (it aggregates more information than you have).
-  • If the resolution criteria are mechanical and the underlying event is well-modeled by base rates (mortality, scheduled events, mature processes), trust your own estimate more.
+Output a probability you would honestly stand behind if forced to bet your own money. Use the full 0.0-1.0 range — there is no reason your answer should cluster near any particular number.
 
-The output is consumed by a basket strategy that will compute (subjective_p_win − price) as the "edge." That edge column will only be useful if your estimates have genuine signal — anchoring to price destroys the signal. Be willing to estimate lower than market on messy markets, and to agree with market on clean ones.
+Do NOT use the market price as an input to your reasoning. The market price reflects a population of bettors with their own biases, incentives, and information asymmetries; it is being analysed separately by the consuming code and combining the two sources of signal here destroys the value of yours.
 
-Output should be a single decimal between 0 and 1, e.g. 0.97 for "I think the favored side wins 97% of the time."
+You will sometimes disagree sharply with the market. That disagreement is the entire reason your estimate is being collected. State it honestly.
 """
 
 
