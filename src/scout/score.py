@@ -61,6 +61,12 @@ def score_market(market: dict, today: date, cfg: Config) -> Candidate | None:
     if yield_apr < cfg.yield_threshold_apr:
         return None
 
+    primary_tag = market.get("primary_tag")
+    if primary_tag and cfg.excluded_tags:
+        excluded_lower = {t.lower() for t in cfg.excluded_tags}
+        if str(primary_tag).lower() in excluded_lower:
+            return None
+
     return Candidate(
         market_id=market["id"],
         side=side,

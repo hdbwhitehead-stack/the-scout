@@ -51,7 +51,8 @@ def _load(config_path: Path) -> Config:
 
 def _all_candidates(conn: sqlite3.Connection, cfg: Config, today: date) -> list[Candidate]:
     cur = conn.execute(
-        "SELECT id, end_date, yes_price, no_price, volume, liquidity FROM markets"
+        "SELECT id, end_date, yes_price, no_price, volume, liquidity, primary_tag "
+        "FROM markets"
     )
     out: list[Candidate] = []
     for row in cur.fetchall():

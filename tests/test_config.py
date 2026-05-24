@@ -55,3 +55,40 @@ model = "claude-haiku-4-5"
     cfg = load_config(p)
     assert cfg.min_liquidity == 100.0
     assert cfg.min_volume == 1000.0
+
+
+def test_load_config_uses_defaults_for_recommended_and_excluded_fields(tmp_path: Path) -> None:
+    """Older configs without the new recommendation fields still load cleanly."""
+    p = tmp_path / "config.toml"
+    p.write_text(
+        """
+yield_threshold_apr = 0.05
+min_price = 0.85
+max_days_to_resolution = 730
+model = "claude-haiku-4-5"
+"""
+    )
+    cfg = load_config(p)
+    assert cfg.recommended_min_edge_pct == 3.0
+    assert cfg.recommended_max_risk_score == 2
+    assert cfg.excluded_tags == ()
+
+
+def test_load_config_reads_recommended_and_excluded_fields(tmp_path: Path) -> None:
+    p = tmp_path / "config.toml"
+    p.write_text(
+        """
+yield_threshold_apr = 0.05
+min_price = 0.85
+max_days_to_resolution = 730
+model = "claude-haiku-4-5:v2"
+recommended_min_edge_pct = 5.0
+recommended_max_risk_score = 1
+excluded_tags = ["Religion", "Crypto Prices"]
+"""
+    )
+    cfg = load_config(p)
+    assert cfg.recommended_min_edge_pct == 5.0
+    assert cfg.recommended_max_risk_score == 1
+    assert cfg.excluded_tags == ("Religion", "Crypto Prices")
+    assert cfg.model == "claude-haiku-4-5:v2"

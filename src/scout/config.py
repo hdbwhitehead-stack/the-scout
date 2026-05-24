@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import tomllib
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 
@@ -14,6 +14,9 @@ class Config:
     model: str
     min_liquidity: float
     min_volume: float
+    recommended_min_edge_pct: float = 3.0
+    recommended_max_risk_score: int = 2
+    excluded_tags: tuple[str, ...] = field(default_factory=tuple)
 
 
 def load_config(path: Path) -> Config:
@@ -40,6 +43,12 @@ def load_config(path: Path) -> Config:
     if min_volume < 0:
         raise ValueError("min_volume must be >= 0")
 
+    recommended_min_edge_pct = float(data.get("recommended_min_edge_pct", 3.0))
+    recommended_max_risk_score = int(data.get("recommended_max_risk_score", 2))
+
+    excluded_tags_raw = data.get("excluded_tags", []) or []
+    excluded_tags = tuple(str(t) for t in excluded_tags_raw)
+
     return Config(
         yield_threshold_apr=yield_threshold,
         min_price=min_price,
@@ -47,4 +56,7 @@ def load_config(path: Path) -> Config:
         model=str(data["model"]),
         min_liquidity=min_liquidity,
         min_volume=min_volume,
+        recommended_min_edge_pct=recommended_min_edge_pct,
+        recommended_max_risk_score=recommended_max_risk_score,
+        excluded_tags=excluded_tags,
     )

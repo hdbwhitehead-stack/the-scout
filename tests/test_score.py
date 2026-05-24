@@ -16,6 +16,9 @@ def cfg() -> Config:
         model="claude-haiku-4-5",
         min_liquidity=100.0,
         min_volume=1000.0,
+        recommended_min_edge_pct=3.0,
+        recommended_max_risk_score=2,
+        excluded_tags=("Religion",),
     )
 
 
@@ -110,5 +113,28 @@ def test_score_market_zero_volume_but_fresh_book_kept(cfg: Config) -> None:
     market = _market(yes=0.05, no=0.95, end_date="2026-12-29T23:59:59Z")
     market["liquidity"] = 500.0   # above floor
     market["volume"] = 0.0
+    cand = score_market(market, today, cfg)
+    assert cand is not None
+
+
+def test_score_market_excluded_tag_rejected(cfg: Config) -> None:
+    """Markets whose primary_tag is in excluded_tags are dropped after all other gates."""
+    today = date(2026, 5, 23)
+    market = _market(yes=0.05, no=0.95, end_date="2026-12-29T23:59:59Z")
+    market["primary_tag"] = "Religion"
+    assert score_market(market, today, cfg) is None
+
+
+def test_score_market_excluded_tag_matches_case_insensitive(cfg: Config) -> None:
+    today = date(2026, 5, 23)
+    market = _market(yes=0.05, no=0.95, end_date="2026-12-29T23:59:59Z")
+    market["primary_tag"] = "religion"  # lower case still matches "Religion"
+    assert score_market(market, today, cfg) is None
+
+
+def test_score_market_non_excluded_tag_kept(cfg: Config) -> None:
+    today = date(2026, 5, 23)
+    market = _market(yes=0.05, no=0.95, end_date="2026-12-29T23:59:59Z")
+    market["primary_tag"] = "Politics"
     cand = score_market(market, today, cfg)
     assert cand is not None
