@@ -19,6 +19,9 @@ def _cfg() -> Config:
         model="claude-haiku-4-5",
         min_liquidity=100.0,
         min_volume=1000.0,
+        recommended_min_edge_pct=3.0,
+        recommended_max_risk_score=2,
+        excluded_tags=(),
     )
 
 
@@ -120,6 +123,31 @@ def test_enrich_rows_handles_missing_subjective_p_win() -> None:
     enriched = enrich_rows(rows)
     assert enriched[0]["edge_pct"] is None
     assert enriched[0]["kelly_fraction"] is None
+    assert enriched[0]["suggested_size_pct"] is None
+
+
+def test_enrich_rows_suggested_size_capped_at_one_percent() -> None:
+    # Large Kelly: 0.25 * 0.67 ≈ 0.167, hits the 1% cap.
+    rows = [{"price": 0.85, "days_to_resolution": 100, "subjective_p_win": 0.95}]
+    enriched = enrich_rows(rows)
+    assert enriched[0]["suggested_size_pct"] == pytest.approx(1.0, abs=1e-6)
+
+
+def test_enrich_rows_suggested_size_quarter_kelly_when_below_cap() -> None:
+    # Tiny edge → small Kelly → 0.25 * Kelly stays under the 1% cap.
+    # price=0.97, p_win=0.971 → b ≈ 0.0309, f ≈ 0.0326, 0.25 * f ≈ 0.00815 → 0.81%
+    rows = [{"price": 0.97, "days_to_resolution": 100, "subjective_p_win": 0.971}]
+    enriched = enrich_rows(rows)
+    r = enriched[0]
+    assert r["suggested_size_pct"] is not None
+    assert r["suggested_size_pct"] < 1.0
+    assert r["suggested_size_pct"] == pytest.approx(0.25 * r["kelly_fraction"] * 100, abs=1e-9)
+
+
+def test_enrich_rows_suggested_size_zero_when_no_edge() -> None:
+    rows = [{"price": 0.95, "days_to_resolution": 100, "subjective_p_win": 0.80}]
+    enriched = enrich_rows(rows)
+    assert enriched[0]["suggested_size_pct"] == pytest.approx(0.0, abs=1e-9)
 
 
 def test_kelly_clamped_to_zero_when_no_edge() -> None:

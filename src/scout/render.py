@@ -104,6 +104,11 @@ def enrich_rows(rows: list[dict]) -> list[dict]:
         else:
             r["edge_pct"] = None
             r["kelly_fraction"] = None
+        # Suggested position size: min(0.25 * Kelly, 1% of bankroll), as a %.
+        if r.get("kelly_fraction") is None:
+            r["suggested_size_pct"] = None
+        else:
+            r["suggested_size_pct"] = min(0.25 * r["kelly_fraction"], 0.01) * 100
     return rows
 
 
@@ -124,6 +129,8 @@ def render_report(
     html = template.render(
         rows_json=json.dumps(rows, ensure_ascii=False),
         generated_at=generated_at,
+        recommended_min_edge_pct=cfg.recommended_min_edge_pct,
+        recommended_max_risk_score=cfg.recommended_max_risk_score,
     )
 
     out_dir.mkdir(parents=True, exist_ok=True)

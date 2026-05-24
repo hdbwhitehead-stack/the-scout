@@ -189,6 +189,7 @@
   .chip:first-child { margin-left: 0; }
   .chip:hover { background: rgba(20,19,15,0.06); }
   .chip.active { background: var(--ink); color: var(--paper); }
+  .chip.accent.active { background: var(--accent); color: var(--paper); border-color: var(--accent); }
   select.tag-select {
     appearance: none;
     border: 1px solid var(--rule);
@@ -399,6 +400,14 @@
   td.kelly .kelly-val.low { color: var(--ink-mute); }
   td.kelly .kelly-val.mid { color: var(--ink); }
   td.kelly .kelly-val.high { color: var(--accent); font-weight: 600; }
+
+  td.size { text-align: right; white-space: nowrap; }
+  td.size .size-val {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
 
   td.risk { text-align: center; }
   .risk-dots { display: inline-flex; gap: 3px; align-items: center; }
@@ -643,6 +652,15 @@
       <span class="control-label">Search</span>
       <input type="text" class="search" id="search" placeholder="Filter the docket&hellip;" />
     </div>
+    <div class="control-group">
+      <span class="control-label">Lens</span>
+      <div class="chips" id="recommended-chips">
+        <button class="chip accent" id="recommended-toggle" type="button"
+                title="Show only rows with edge &ge; {{ recommended_min_edge_pct }}pp and risk &le; {{ recommended_max_risk_score }}">
+          Recommended only
+        </button>
+      </div>
+    </div>
     <div class="count"><strong id="visible-count">13</strong> of <strong id="total-count">13</strong> shown</div>
   </section>
 
@@ -658,6 +676,7 @@
           <th data-key="yield_apr" class="sorted num-h" style="text-align:right">YTM <span class="arrow">&#9660;</span></th>
           <th data-key="edge_pct" class="num-h hide-sm" style="text-align:right">Edge</th>
           <th data-key="kelly_fraction" class="num-h hide-sm" style="text-align:right">Kelly</th>
+          <th data-key="suggested_size_pct" class="num-h hide-md" style="text-align:right" title="min(0.25 &times; Kelly, 1% of bankroll)">Size</th>
           <th data-key="days_to_resolution" class="num-h" style="text-align:right">Resolves</th>
           <th data-key="risk_score" class="hide-sm" style="text-align:center">Risk</th>
           <th></th>
@@ -686,6 +705,10 @@
         <p>The risk score (1&ndash;5) is an LLM judge&rsquo;s read on the <em>resolution criterion</em>, not the market. A 5 means the question is ambiguous, depends on subjective adjudication, or could plausibly never resolve. A 1 means a clean, oracle-friendly question with a public-record answer. The score says nothing about whether the favored side will actually win.</p>
       </details>
       <details class="method">
+        <summary>How the Size column is computed</summary>
+        <p>Suggested size is <code>min(0.25 &times; Kelly, 1% of bankroll)</code>. Full Kelly on these bets is brutal &mdash; loss-on-wrong is often 15&ndash;20&times; win-on-right &mdash; so quarter-Kelly is the prudent floor and a hard 1% cap prevents any single resolution from being more than a 1% drawdown event. Position sizing is the difference between picking up pennies and being run over by the steamroller.</p>
+      </details>
+      <details class="method">
         <summary>Disclaimer, in plain English</summary>
         <p>This is a research toy. It is not financial advice. Prediction markets are illegal in many jurisdictions and unregulated everywhere else. Do not bet money you cannot afford to lose. Do not bet money you can afford to lose, either, if you have not read the resolution rules in full. The author is, at best, a hobbyist.</p>
       </details>
@@ -704,6 +727,8 @@
 
 /* All data below is hardcoded; rendering uses safe DOM APIs (createElement + textContent). */
 const DATA = {{ rows_json | safe }};
+const RECOMMENDED_MIN_EDGE_PCT = {{ recommended_min_edge_pct }};
+const RECOMMENDED_MAX_RISK_SCORE = {{ recommended_max_risk_score }};
 
 const state = {
   sortKey: "yield_apr",
@@ -711,6 +736,7 @@ const state = {
   duration: "all",
   tag: "all",
   query: "",
+  recommended: false,
   open: new Set()
 };
 
@@ -768,6 +794,12 @@ function applyFilters() {
       const q = state.query.toLowerCase();
       const hay = (r.question + " " + r.primary_tag + " " + r.summary).toLowerCase();
       if (!hay.includes(q)) return false;
+    }
+    if (state.recommended) {
+      if (r.edge_pct === null || r.edge_pct === undefined) return false;
+      if (r.risk_score === null || r.risk_score === undefined) return false;
+      if (r.edge_pct < RECOMMENDED_MIN_EDGE_PCT) return false;
+      if (r.risk_score > RECOMMENDED_MAX_RISK_SCORE) return false;
     }
     return true;
   });
@@ -842,6 +874,14 @@ function renderRow(r, i) {
   }
   tr.appendChild(kellyTd);
 
+  const sizeTd = el("td", { class: "num size hide-md" });
+  if (r.suggested_size_pct === null || r.suggested_size_pct === undefined) {
+    sizeTd.appendChild(el("span", { class: "size-val" }, "—"));
+  } else {
+    sizeTd.appendChild(el("span", { class: "size-val" }, r.suggested_size_pct.toFixed(2) + "%"));
+  }
+  tr.appendChild(sizeTd);
+
   const daysTd = el("td", { class: "days" });
   daysTd.appendChild(el("span", { class: "days-num" }, r.days_to_resolution + "d"));
   daysTd.appendChild(el("span", { class: "end-date" }, fmt.date(r.end_date)));
@@ -858,7 +898,7 @@ function renderRow(r, i) {
 
 function renderDetailRow(r) {
   const tr = el("tr", { class: "detail open" });
-  const td = el("td", { colspan: "11" });
+  const td = el("td", { colspan: "12" });
   const inner = el("div", { class: "detail-inner" });
 
   const summary = el("div", { class: "detail-block summary" });
@@ -904,6 +944,14 @@ function renderDetailRow(r) {
     kellyM.appendChild(el("strong", null, (r.kelly_fraction * 100).toFixed(1) + "%"));
   }
   metrics.appendChild(kellyM);
+
+  const sizeM = el("div", { class: "metric" }, "Suggested size");
+  if (r.suggested_size_pct === null || r.suggested_size_pct === undefined) {
+    sizeM.appendChild(el("strong", null, "—"));
+  } else {
+    sizeM.appendChild(el("strong", null, r.suggested_size_pct.toFixed(2) + "%"));
+  }
+  metrics.appendChild(sizeM);
 
   inner.appendChild(metrics);
 
@@ -955,6 +1003,13 @@ function init() {
   });
   sel.addEventListener("change", e => { state.tag = e.target.value; render(); });
   document.getElementById("search").addEventListener("input", e => { state.query = e.target.value; render(); });
+
+  const recBtn = document.getElementById("recommended-toggle");
+  recBtn.addEventListener("click", () => {
+    state.recommended = !state.recommended;
+    recBtn.classList.toggle("active", state.recommended);
+    render();
+  });
 
   document.querySelectorAll("thead th[data-key]").forEach(th => {
     th.addEventListener("click", () => {
