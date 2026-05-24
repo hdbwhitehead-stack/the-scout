@@ -3,4 +3,18 @@ min_price = 0.85
 min_liquidity = 100.0
 min_volume    = 1000.0
 max_days_to_resolution = 730
-model = "claude-haiku-4-5"
+
+# Bumping the model identifier suffix invalidates the judgments cache
+# (judgments are keyed on (market_id, side, model)). Change the suffix when
+# the SYSTEM_PROMPT in judge.py changes materially so the next `scout judge`
+# run produces fresh judgments under the new prompt.
+model = "claude-haiku-4-5:v2"
+
+# Recommended-bet filter thresholds. The "Recommended only" chip on the
+# rendered docket hides rows that fail either threshold.
+recommended_min_edge_pct = 3.0
+recommended_max_risk_score = 2
+
+# Categories to drop in scoring. Matched case-insensitively against the
+# market's primary_tag. Start with Religion; add others as needed.
+excluded_tags = ["Religion"]
