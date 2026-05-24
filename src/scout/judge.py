@@ -93,10 +93,16 @@ def _parse_judgment(text: str, fallback_price: float | None = None) -> Judgment:
 
 
 async def _collect_text(prompt: str, model: str) -> str:
-    """Send a one-shot prompt via claude-agent-sdk and return the assistant text."""
+    """Send a one-shot prompt via claude-agent-sdk and return the assistant text.
+
+    ``model`` may carry a cache-busting suffix like ``claude-haiku-4-5:v3``; the
+    SDK only accepts real Anthropic model ids, so we strip anything after the
+    first ``:``. The full string remains the judgments-cache key.
+    """
+    api_model = model.split(":", 1)[0]
     options = ClaudeAgentOptions(
         system_prompt=SYSTEM_PROMPT,
-        model=model,
+        model=api_model,
         allowed_tools=[],
         max_turns=1,
         setting_sources=None,
